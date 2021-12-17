@@ -1,2 +1,2 @@
-# mp-www
+# www
 MagicPuddle Website
