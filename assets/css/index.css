@@ -287,6 +287,7 @@ h6 {
     box-shadow: 0.2rem 0.2rem 4rem var(--primary);
 }
 
+
 .logo,
 .p-logo {
     display: inline;
@@ -300,14 +301,14 @@ h6 {
 }
 
 .p-logo {
-    display: inline;
+    display: flex;
     font-family: var(--font-h1);
     text-shadow: 0.2rem 0.2rem 0.2rem var(--background);
     font-size: 2.0em;
 }
 
 .menu {
-    display: inline-flex;
+    display: flexbox;
     font-size: 2.5rem;
     text-align: center;
     overflow: hidden;
