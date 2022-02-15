@@ -286,6 +286,10 @@ h6 {
     padding-bottom: 2%;
     box-shadow: 0.2rem 0.2rem 4rem var(--primary);
 }
+.logo img {
+  size: auto;
+  object-fit: scale-down;
+}
 
 .logo,
 .p-logo {
