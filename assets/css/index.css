@@ -286,10 +286,6 @@ h6 {
     padding-bottom: 2%;
     box-shadow: 0.2rem 0.2rem 4rem var(--primary);
 }
-.logo img {
-  size: auto;
-  object-fit: scale-down;
-}
 
 .logo,
 .p-logo {
@@ -299,6 +295,8 @@ h6 {
     top: 0.5%;
     padding-left: 4px;
     z-index: 0;
+    size: auto;
+    object-fit: scale-down;
 }
 
 .p-logo {
@@ -309,7 +307,7 @@ h6 {
 }
 
 .menu {
-    display: flexbox;
+    display: inline-flex;
     font-size: 2.5rem;
     text-align: center;
     overflow: hidden;
