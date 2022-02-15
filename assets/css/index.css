@@ -376,6 +376,7 @@ h6 {
 }
 
 #main img {
+  object-fit: scale-down;
     border-radius: 6rem;
     -webkit-border-radius: 6rem;
     -moz-border-radius: 6rem;
@@ -383,7 +384,9 @@ h6 {
     -o-border-radius: 6rem;
     size: auto
 }
-
+img {
+  object-fit: scale-down
+}
 #projects {
     display: flexbox;
     box-sizing: border-box;
