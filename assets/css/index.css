@@ -285,17 +285,17 @@ h6 {
     margin: 0 auto;
     padding-bottom: 2%;
     box-shadow: 0.2rem 0.2rem 4rem var(--primary);
+    object-fit: scale-down;
 }
 
 
 .logo,
 .p-logo {
-    display: inline;
     position: fixed;
     color: var(--text);
-    top: 0.5%;
+    top: -5%;
     padding-left: 4px;
-    z-index: 0;
+    z-index: 1;
     size: auto;
     object-fit: scale-down;
 }
@@ -305,6 +305,7 @@ h6 {
     font-family: var(--font-h1);
     text-shadow: 0.2rem 0.2rem 0.2rem var(--background);
     font-size: 2.0em;
+    object-fit: scale-down;
 }
 
 .menu {
@@ -315,6 +316,7 @@ h6 {
     border-radius: 2rem;
     margin-right: 0.8%;
     margin-top: 0.8%;
+    object-fit: scale-down;
 }
 
 .menu a {
@@ -400,6 +402,7 @@ img {
 .menu img {
   float: left;
   object-fit: scale-down;
+  size: auto
 }
 
 #projects {
