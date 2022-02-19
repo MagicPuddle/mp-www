@@ -3,11 +3,11 @@
     --background: #181616;
     --background-alt: #4b4b4b;
 
-    --primary: #491375;
-    --primary-alt: #5b167a;
+    --primary: #3d1375;
+    --primary-alt: #45167a;
     --secondary: #1AE5BE;
     --secondary-alt: #DEC402;
-    --complement: #6a18ee;
+    --complement: #7518ee;
     --complement-alt: #ee6002;
 
     --text: #e5dfdd;
@@ -27,42 +27,42 @@
 
 /* Spacing */
 body {
-    line-height: 1.5em;
-    margin-block: 2%;
+    line-height: 2.2rem;
+    margin-block: 0.2rem;
 }
 
 header {
-    padding-top: 2.5rem;
-    margin-block: 2%;
+    padding-top: 2.9rem;
+    margin-block: 0.2rem;
 }
 
 main {
-    padding: 0.5%;
-    margin: 2%;
-    margin-block: 2%;
+    padding: 0 1.9rem 0 1.9rem;
+    margin: 25rem;
+    margin-block: 0.2rem;
 }
 
 #links {
-    padding-top: 0.5%;
-    margin-top: 2%;
+    padding-top: 0.2rem;
+    margin-top: 0.2rem;
 }
 
 #contact {
-    padding-top: 10%;
-    margin-top: 2%;
+    padding-top: 0.2rem;
+    margin-top: 0.2rem;
 }
 
 footer {
-    margin: 0 auto;
+    margin: 0 0.2rem 0 0.2rem;
 }
 
 hr {
-    margin-top: 5rem;
+    margin-top: 0.2rem;
     margin-bottom: 0.2rem;
 }
 
 div {
-    margin-bottom: 2%;
+    margin: 0.2rem;
 }
 
 h1 h2,
@@ -138,8 +138,8 @@ h6 {
 }
 
 p {
-    margin: 3px;
-    padding: 3px;
+    margin: 0.2rem;
+    padding: 0.2rem;
 }
 
 button,
@@ -192,12 +192,10 @@ html {
 }
 
 body {
-    padding: 0 auto;
-    margin: 0 auto;
     justify-content: center;
     background-color: var(--background);
     place-content: center;
-    font-size: 1.3rem;
+    font-size: 2.2rem;
     /* currently ems cause chrome bug misinterpreting rems on body element */
     font-weight: 400;
     font-family: var(--font);
@@ -231,7 +229,7 @@ pre>code {
 
 /* Links */
 a {
-    color: var(--code);
+    color: var(--text-primary);
     text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
 }
 
@@ -368,7 +366,7 @@ h6 {
     display: flexbox;
     box-sizing: border-box;
     color: var(--text);
-    text-align:  justify;
+    text-align: justify;
     z-index: auto;
     border: .3rem solid var(--secondary);
     box-shadow: 0 -0rem 4rem var(--primary);
@@ -397,6 +395,7 @@ img {
   -o-border-radius: 2rem;
   size: auto;
   object-fit: scale-down;
+  margin: 0.2rem;
 }
 
 .menu img {
