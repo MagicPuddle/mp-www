@@ -455,7 +455,9 @@ img {
 }
 
 .credits p {
-    color: var(--text-primary)
+    color: var(--text-primary);
+    line-height: 0.3rem;
+    font-size: smaller;
 }
 
 #badges img {
