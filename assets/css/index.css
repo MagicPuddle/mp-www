@@ -394,7 +394,7 @@ img {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
   size: auto;
-  object-fit: scale-down;
+  object-fit: contain;
   margin: 2rem;
 }
 
