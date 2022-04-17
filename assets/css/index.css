@@ -28,7 +28,7 @@ header {
     background-color: var(--background);
     border-color: var(--secondary);
     display: block;
-    position: fixed;
+    position: sticky;
     text-align: center;
     text-justify: auto;
     justify-content: center;
@@ -86,6 +86,7 @@ header {
     text-align: center;
     text-justify: auto;
     justify-content: center;
+    border: 0.096rem inset var(--primary);
     box-shadow: 0rem 0rem 0.46rem 0rem  var(--secondary);
 }
 
@@ -95,7 +96,6 @@ header {
     justify-content: center;
     background-color: var(--background);
     overflow: auto;
-    border-color: var(--primary);
     border-radius: 3.96rem;
     -webkit-border-radius: 3.96rem;
     -moz-border-radius: 3.96rem;
@@ -111,18 +111,22 @@ header {
 .nav .active {
     background-color: var(--primary);
     color: var(--secondary);
+    border: 0.096rem inset limegreen;
+    box-shadow: 0rem 0rem 00.096rem 0.096rem  limegreen;
 }
 
 .nav .active:hover {
-    border-color: var(--secondary);
+    border: 0.096rem outset var(--secondary);
     background-color: var(--primary-alt);
     color: var(--text-alt);
+    box-shadow: 0rem 0rem 00.096rem 0.096rem  var(--primary);
 }
 
 .nav .active:active {
     background-color: var(--primary);
     color: var(--secondary);
     outline-style: inset;
+    box-shadow: 0rem 0rem 00.096rem 0.096rem  var(--secondary);
 }
 
 .nav a {
@@ -143,9 +147,10 @@ header {
 }
 
 .nav a:hover {
-    border-color: var(--compliment);
+    border: 0.096rem outset var(--primary);
     background-color: var(--secondary);
     color: var(--text-alt);
+    box-shadow: 0rem 0rem 00.096rem 0.096rem  var(--primary);
 }
 
 .nav a:active {
@@ -156,6 +161,7 @@ header {
 
 .nav .icon {
     display: none;
+    padding: 1.96rem;
 }
 
 .nav a:focus {}
@@ -165,10 +171,10 @@ section {
     font: var(--font);
     background-color: var(--background-alt);
     scroll-padding-bottom: 0.096rem;
-    margin-top: 190px;
+    margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1.96rem;
+    margin-bottom: 2.96rem;
     padding-left: 0.96rem;
     padding-left: 0.96rem;
     width: 80%;
