@@ -95,7 +95,7 @@ header {
     justify-content: center;
     background-color: var(--background);
     overflow: auto;
-    border-color; var(--primary);
+    border-color: var(--primary);
     border-radius: 3.96rem;
     -webkit-border-radius: 3.96rem;
     -moz-border-radius: 3.96rem;
