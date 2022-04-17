@@ -1,6 +1,9 @@
 html {
     font-size: larger;
 }
+body{
+    background-color: var(--background-alt);
+}
 .scrollbar {
     overflow-y: scroll;
     /* Add the ability to scroll */
