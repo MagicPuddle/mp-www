@@ -1,103 +1,70 @@
-<!doctype html>
-<html id="home" class="scrollbar" lang="EN">
+<!DOCTYPE html>
+<html class="scrollbar" lang="EN">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css" integrity="sha512-XgCw4Srl8lC1ECwcaHwAU0WnxQwHkqmInzg9wJLtGB7DRuMaXPuK2k9WJ2AwRDGdrgK9eJpZl2hUlLi2WQssmw==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack-subset.css" integrity="sha512-/qDvulLjBL2EaRMJOIXQhkiKwhlkDdT2qY000siiuS02OOxbL8BrBOW1aJBjPkC/QJzc8VbnIe4zzGsISNnTHg==" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-
-    <!-- MagicPuddle CSS -->
-    <link rel="stylesheet" href="assets/css/index.css"/>
-    <script src="https://kit.fontawesome.com/84000ae34f.js" crossorigin="anonymous"></script>
-<link
-  href="https://cdn.jsdelivr.net/gh/Lukas-W/font-logos@v0.16/assets/font-logos.css"
-  rel="stylesheet"
-  crossorigin="anonymous"
-/>
-<link
-  href="https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css"
-  rel="stylesheet"
-  crossorigin="anonymous"
-/>
-    <title>MagicPuddle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <!-- Outsourced CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css"
+    integrity="sha512-XgCw4Srl8lC1ECwcaHwAU0WnxQwHkqmInzg9wJLtGB7DRuMaXPuK2k9WJ2AwRDGdrgK9eJpZl2hUlLi2WQssmw=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--<link rel="stylesheet" href="assets/css/simplegrid.css" />-->
+  <!-- MagicPuddle -->
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <link rel="stylesheet" href="assets/css/colors.css" />
+  <link rel="stylesheet" href="assets/css/media-query.css" />
+  <script type="text/javascript" src="assets/js/mp-nav.js"></script>
+  <!-- Page Title -->
+  <title>MagicPuddle</title>
 </head>
 
 <body>
-    <header>
-      <div class="banner">
-        <div class="menu">
-          <h1 class="p-logo"><img class="container" src="assets/img/mplogo-sharp.png" alt="logo-main"></h1>
-          <div id="menu" class="menu">
-              <a class="menu" href="https://magicpuddle.netlify.app"><i class="fas fa-igloo"></i></a>
-              <a class="menu" href="https://magicpuddle.netlify.app#projects"><i class="fab fa-app-store-ios"></i></a>
-              <a class="menu" href="https://github.com/MagicPuddle"><i class="fab fa-github-alt"></i></a>
-              <a class="menu" href="https://magicpuddle.netlify.app#contact"><i class="far fa-envelope"></i></a>
-        </div>
+  <header>
+    <div class="header">
+      <h1 class="header">MagicPuddle</h1>
+      <div class="nav" id="nav-menu">
+        <!--<img src="assets/img/mplogo-sharp.png" />-->
+        <a href="#home" class="active"><i class="fa fa-igloo"></i></a>
+        <a href="#news"><i class="fa fa-newspaper"></i></a>
+        <a href="#shop.html"><i class="fa fa-shop"></i></a>
+        <a href="#contact"><i class="fa fa-phone"></i></a>
+        <a href="#login"><i class="fa fa-user"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="menuOpen()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-    </header>
-    <div class="main">
-      <!-- <img class="p-logo" src="assets/img/mplogo.png" alt="logo-main">-->
     </div>
-    <main id="main" class="main">
-            <div class="container">      
-                  <h3>MagicPuddle</h3>
-                  <p>We are updating our site!</p>
-                  <p>
-                    We are a technology company that provides progressive
-                    solutions to individuals and organizations. Our solutions are
-                    created to meet customers technology requirements and
-                    thier budgets.
-                  </p>
-                  <!--- Future Service Page -->
-                  <p>We will be offering Computer literacy and tutoring in the near future.</p>
-              </div>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="credits">
-                <p>&copy; 2022  MagicPuddle | All Rights Reserved</p>
-                <p>Forged with <i class="fas fa-heart" color="red"></i> & <i class="fas fa-coffee" color="brown"></i>by: <a href="https://magicpuddle.netlify.app/devteam">MPDev Team</a></p>
-            </div>
-            <div id="badges" class="container">
-                <!-- Place Badges Here-->
-            </div>
-        </div>
+  </header>
+  <br>
+  <section id="home" class="section corner-round border ">
+    <h1>Nutrition Facts</h1>
+    <p class="p-shadow">MagicPuddle is an organization of meatbags, made with real bones and live action judo chop.
+      We provide plumbis technology for other meatbags and meatbag organizations.</p>
+    <p class="p-shadow">Warning: May contain peanuts and/or squirells, saftey belt, and towel sold seperately!</p>
+  </section>
+  <br>
+  <!--
+<section id="news" class="section corner-round border ">
+  <h1>Latest</h1>
+    <p class="p-shadow">Currently assembling canibal duck army. To infiltrate and assimilate all non ducks in the general area.</p>
+</section>
+-->
+  <br>
+  <footer">
+    <div class="footer">
+      <div class="credits border">
+        <p>&copy; 2022 MagicPuddle | All Rights Reserved</p>
+      </div>
+    </div>
     </footer>
-    <!-- Scripts -->
-    <!-- Mail -->
-    <script src="assets/php/mail.php"></script>
-    <!-- <script src="assests/js/MagicPuddle.js"></script> -->
+    <!-- Script section -->
 </body>
 
-<!-- Script section -->
-    <script type="text/javascript">
-      $("#navId a").click((e) => {
-        e.preventDefault();
-        $(this).tab("show");
-      });
-    </script>
-    <script
-      crossorigin="anonymous"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"
-    ></script>
-    <script
-      crossorigin="anonymous"
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"
-    ></script>
-    <script
-      crossorigin="anonymous"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
-    ></script>
-    <script
-      crossorigin="anonymous"
-      src="https://cdn.jsdelivr.net/npm/nf-icons@0.1.0/dist/index.min.js"
-    ></script>
-    <script
-      crossorigin="anonymous"
-      src="https://cdn.jsdelivr.net/combine/npm/nf-icons@0.1.0,npm/svelte-nerdfonts@1.0.3,npm/nerdfont-icons@0.0.2"
-    ></script>
-<!-- End Footer -->
 </html>

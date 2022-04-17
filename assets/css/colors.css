@@ -1,0 +1,61 @@
+:root {
+    /* define colors */
+    --background: #0f0c14;
+    --background-alt: #0a0210;
+
+    --primary: #3d1375;
+    --primary-alt: #45167a;
+    --secondary: #1AE5BE;
+    --secondary-alt: #DEC402;
+    --compliment: #ee6002;
+    --compliment-alt: #ff3300;
+
+    --text: #e5dfdd;
+    --text-primary: #1AE5BE;
+    --text-alt: #181616;
+    --error: #ff3300;
+
+    --code: #DEC402;
+
+    /* define fonts */
+    --font-menu: 'hack-subset', 'Font Awesome Brands';
+    --font: 'sauce code pro', 'Hack', 'Terminus', 'hack-subset', sans-serif;
+    --font-alt: ;
+    --font-h1: 'Fugaz One', 'Hack', 'hack-subset', cursive;
+    --font-code: 'Terminus', 'Hack', 'hack-subset', 'monospace';
+}
+
+body { 
+    background: var(--background);
+    accent-color: var(--background-alt);
+}
+
+.border {
+    border: 0.096rem solid var(--secondary);
+    box-shadow: 0 -0rem 2.96rem var(--primary-alt);
+}
+
+/* Code */
+code {
+    align-content: justify;
+    font-family: 'Terminus', 'Hack', monospace;
+    text-align: center;
+    font-size: 75%;
+    white-space: pre-wrap;
+    padding: 0.3rem;
+    background: var(--background-alt);
+    color: var(--code);
+    box-shadow: 0rem 0rem 0.5rem 0.3rem var(--primary-alt);
+    border: 0.1rem solid var(--secondary);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+pre>code {
+    font-family: 'Terminus', 'Hack', monospace;
+    padding: 2rem 2rem;
+    white-space: pre;
+}
