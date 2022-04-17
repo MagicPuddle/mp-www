@@ -86,7 +86,6 @@ header {
     text-align: center;
     text-justify: auto;
     justify-content: center;
-    outline: 0.16rem inset var(--primary);
     box-shadow: 0rem 0rem 0.46rem 0rem  var(--secondary);
 }
 
@@ -96,6 +95,7 @@ header {
     justify-content: center;
     background-color: var(--background);
     overflow: auto;
+    outline: 0.16rem inset var(--primary);
     border-radius: 3.96rem;
     -webkit-border-radius: 3.96rem;
     -moz-border-radius: 3.96rem;

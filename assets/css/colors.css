@@ -27,7 +27,6 @@
 
 body { 
     background: var(--background);
-    accent-color: var(--secondary);
 }
 
 .border {
