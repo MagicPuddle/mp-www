@@ -1,6 +1,6 @@
 :root {
     /* define colors */
-    --background: #0f0c14;
+    --background: #06030b;
     --background-alt: #0a0210;
 
     --primary: #3d1375;
@@ -27,7 +27,7 @@
 
 body { 
     background: var(--background);
-    accent-color: var(--background-alt);
+    accent-color: var(--secondary);
 }
 
 .border {

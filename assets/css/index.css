@@ -1,8 +1,10 @@
 html {
     font-size: larger;
 }
-body{
-    background-color: var(--background-alt);
+
+body {
+    width: auto;
+    height: 100%;
 }
 .scrollbar {
     overflow-y: scroll;
