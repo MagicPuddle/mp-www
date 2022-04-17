@@ -95,6 +95,7 @@ header {
     justify-content: center;
     background-color: var(--background);
     overflow: auto;
+    border-color; var(--primary);
     border-radius: 3.96rem;
     -webkit-border-radius: 3.96rem;
     -moz-border-radius: 3.96rem;
@@ -197,8 +198,6 @@ section {
     border-top-right-radius: 9rem;
     background-color: var(--background-alt);
     box-shadow: 0rem 0rem 00.96rem 0.096rem  var(--primary);
-    outline-style: outset;
-    outline-color: var(--primary);
 }
 
 .credits p {
