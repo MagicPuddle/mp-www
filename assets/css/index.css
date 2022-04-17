@@ -1,8 +1,10 @@
 html {
+    background-color: var(--background);
     font-size: larger;
 }
 
 body {
+    background-color: var(--background);
     width: auto;
     height: 100%;
 }
@@ -47,6 +49,7 @@ header {
 }
 
 .logo {
+    background-color: var(--background);
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -63,6 +66,7 @@ header {
 }
 
 .logo h1 {
+    background-color: var(--background);
     color: var(--text);
     font-family: var(--font-h1);
     font-weight: 400;
@@ -80,7 +84,7 @@ header {
 }
 
 .nav {
-    background-color: var(--background);
+    background-color: var(--background-alt);
     display: flex;
     position: top;
     text-align: center;
@@ -94,7 +98,7 @@ header {
     text-align: center;
     text-justify: auto;
     justify-content: center;
-    background-color: var(--background);
+    background-color: var(--background-alt);
     overflow: auto;
     border-radius: 3.96rem;
     -webkit-border-radius: 3.96rem;
@@ -111,8 +115,8 @@ header {
 .nav .active {
     background-color: var(--primary);
     color: var(--secondary);
-    border: 0.096rem inset limegreen;
-    box-shadow: 0rem 0rem 00.096rem 0.096rem  limegreen;
+    border: 0.096rem inset var(--secondary);
+    box-shadow: 0rem 0rem 00.096rem 0.096rem  var(--primary);
 }
 
 .nav .active:hover {
@@ -185,7 +189,8 @@ section {
     text-shadow: 0rem .026rem 0.026rem var(--text-alt)
 }
 
-.footer {
+footer {
+    background-color: var(--background);
     position: bottom;
     margin-left: auto;
     margin-right: auto;
