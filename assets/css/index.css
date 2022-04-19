@@ -42,7 +42,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 69%;
-    height: fit-content;
 }
 
 .border {
@@ -61,13 +60,14 @@ header {
     height: 50px;
 }
 
-.logo img {
+.logo, img {
     position: fixed;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
     height: fit-content;
+    left:1.96rem;
 }
 
 header h1 {
@@ -185,7 +185,7 @@ section {
     justify-items: center;
     justify-content: center;
     text-align: center;
-    text-decoration: none;
+    text-justify: center;
     display: box;
     box-sizing: border-box;
     font: var(--font);
@@ -228,7 +228,7 @@ section a{
     display: box;
     box-sizing: border-box;
     color: var(--text);
-    padding: 14px 16px;
+    padding: 4px 6px;
     margin-left: auto;
     margin-right: auto;
 
