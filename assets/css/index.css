@@ -70,6 +70,7 @@ header {
 }
 
 header h1 {
+    background-color: var(--background);
     position: fixed;
     color: var(--text);
     font-family: var(--font-h1);
