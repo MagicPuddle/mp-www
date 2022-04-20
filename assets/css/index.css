@@ -76,7 +76,7 @@ header {
     height: fit-content;
     top: 12px;
     left: 0;
-    right: 320px;
+    right: 326px;
     z-index: 999;
 }
 
@@ -95,7 +95,7 @@ header h1 {
     margin-right: auto;
     width: fit-content;
     top: 3px;
-    left: 60px;
+    left: 53px;
     right: 0;
     z-index: 966;
 }
