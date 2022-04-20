@@ -5,13 +5,18 @@ html {
 
 body {
     background-color: var(--background);
-    width: auto;
-    height: fit-content;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--text);
 }
 
 br {
     width: 100%;
+}
+hr {
+    padding-top: 170px;
+    margin-bottom: 140px;
 }
 .scrollbar {
     overflow-y: scroll;
@@ -92,31 +97,31 @@ header h1 {
 
 .nav {
     background-color: var(--background-alt);
+    border: 0.096rem inset var(--primary);
+    box-shadow: 0rem 0rem 0.46rem 0rem var(--secondary);
     display: box;
     float: none;
-    position:fixed;
+    justify-content: center;
+    left:0;
     margin-left: auto;
     margin-right: auto;
-    top: 86px;
-    left:0;
+    position:fixed;
     right:0;
     text-align: center;
     text-justify: auto;
-    justify-content: center;
-    border: 0.096rem inset var(--primary);
-    box-shadow: 0rem 0rem 0.46rem 0rem var(--secondary);
+    top: 86px;
 }
 
-#nav-menu {
+#nav-menu {   
     background-color: var(--background-alt);
-    overflow: auto;
     border-radius: 3.96rem;
-    -webkit-border-radius: 3.96rem;
-    -moz-border-radius: 3.96rem;
-    -ms-border-radius: 3.96rem;
-    -o-border-radius: 3.96rem;
+      -moz-border-radius: 3.96rem;
+      -ms-border-radius: 3.96rem;
+      -o-border-radius: 3.96rem;
+      -webkit-border-radius: 3.96rem;
     margin-left: auto;
     margin-right: auto;
+    overflow: auto;
     padding: 0.33%;
     width: fit-content;
     z-index: auto;
@@ -175,31 +180,33 @@ header h1 {
 
 .nav .icon {
     display: none;
-    padding: 1.96rem;
+    padding: 0.96rem;
 }
 
 .nav a:focus {}
 
-
+#home{
+    margin-top: -26px;
+}
 section {
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
-    text-justify: center;
-    display: box;
-    box-sizing: border-box;
-    font: var(--font);
+    margin-top: 176px;
+    margin-bottom: 166px;
     background-color: var(--background-alt);
-    scroll-padding-bottom: 0.096rem;
-    margin-top: 170px;
+    box-sizing: border-box;
+    display: box;
+    font: var(--font);
+    justify-content: center;
+    justify-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 140px;
-    padding-left: 1.96rem;
-    padding-right: 1.96rem;
-    width: 69%;
-    text-align: center;
+    max-width: 80%;
     overflow: hidden;
+    padding-left: 26px;
+    padding-right: 26px;
+    scroll-padding-bottom: 0.096rem;
+    text-align: center;
+    text-align: center;
+    text-justify: center;
     z-index: auto;
 }
 .section-menu {
@@ -215,12 +222,12 @@ section {
     -o-border-radius: 3.96rem;
     margin-left: auto;
     margin-right: auto;
-    width: 69%;
+    width: 100%;
     z-index: auto;
 }
 
 section a{
-    width: 69%;
+    width: 100%;
     justify-items: center;
     justify-content: center;
     text-align: center;
@@ -231,7 +238,6 @@ section a{
     padding: 4px 6px;
     margin-left: auto;
     margin-right: auto;
-
     font-size: 16px;
     border-radius: 2.96rem;
     -webkit-border-radius: 3.96rem;
@@ -303,17 +309,15 @@ p {
     justify-items: center;
     justify-content: center;
     text-align: center;
-    text-decoration: none;
+    text-justify: center;
     display: box;
     box-sizing: border-box;
     font: var(--font);
     color: var(--text);
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0.66rem;
-    padding-right: 0.66rem;
-    text-align: center;
-    text-justify: center;
+    padding-left: 6px;
+    padding-right: 6px;
     line-height: 1.26rem;
     text-shadow: 0rem .026rem 0.026rem var(--primary-alt);
 }
