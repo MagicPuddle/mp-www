@@ -213,9 +213,9 @@ section {
     padding-left: 26px;
     padding-right: 26px;
     scroll-padding-bottom: 0.096rem;
-    text-align: center;
-    text-align: center;
     text-justify: center;
+    width: 720px;
+    min-height: 260px;
     z-index: auto;
 }
 .section-menu {
