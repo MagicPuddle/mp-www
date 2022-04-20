@@ -95,7 +95,7 @@ header h1 {
     margin-right: auto;
     width: fit-content;
     top: 3px;
-    left: 86px;
+    left: 60px;
     right: 0;
     z-index: 966;
 }
@@ -223,7 +223,7 @@ section {
     text-justify: center;
     justify-content: center;
     background-color: var(--background-alt);
-    overflow: auto;
+    overflow: hidden;
     border-radius: 3.96rem;
     -webkit-border-radius: 3.96rem;
     -moz-border-radius: 3.96rem;
