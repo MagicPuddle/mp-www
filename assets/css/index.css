@@ -185,9 +185,13 @@ header h1 {
     padding: 0.96rem;
 }
 
-.nav a:focus {}
+.nav a:focus {    
+    background-color: var(--primary);
+    color: var(--secondary);
+    outline-style: inset;
+}
 
-#home{
+#about{
     margin-top: -26px;
 }
 section {
