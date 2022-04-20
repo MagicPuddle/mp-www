@@ -45,7 +45,7 @@ code {
     background: var(--background-alt);
     color: var(--code);
     box-shadow: 0rem 0rem 0.5rem 0.3rem var(--primary-alt);
-    border: 0.1rem solid var(--secondary);
+
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;

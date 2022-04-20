@@ -198,8 +198,8 @@ header h1 {
     margin-top: -26px;
 }
 section {
-    margin-top: 176px;
-    margin-bottom: 166px;
+    margin-top: 175px;
+    margin-bottom: 155px;
     background-color: var(--background-alt);
     box-sizing: border-box;
     display: box;
@@ -338,5 +338,5 @@ p {
 }
 
 .icon {
-    padding: 0.96rem;
+    padding: 0.096rem;
 }
