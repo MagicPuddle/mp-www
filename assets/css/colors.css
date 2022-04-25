@@ -4,26 +4,39 @@
     --background-alt: #10001c;
 
     --primary: #3d1375;
-    --primary-alt: #45167a;
+    --primary-alt: #712ac3bc;
+    
     --secondary: #1AE5BE;
-    --secondary-alt: #DEC402;
-    --compliment: #ee6002;
-    --compliment-alt: #ff3300;
+    --secondary-alt: #3a8475;
+    
+    --compliment: #02b6de;
+    --compliment-alt: #ff00d4;
 
-    --text: #e5dfdd;
+    --text: #dacafb;
     --text-primary: #1AE5BE;
-    --text-alt: #181616;
-    --error: #ff3300;
-
-    --code: #DEC402;
+    --text-alt: #10001c;
+    
+    --error: #ff004c;
+    --code: #0088ff;
 
     /* define fonts */
     --font-menu: 'hack-subset', 'Font Awesome Brands';
-    --font: 'sauce code pro', 'Hack', 'Terminus', 'hack-subset', sans-serif;
-    --font-alt: ;
-    --font-h1: 'Fugaz One', 'Hack', 'hack-subset', cursive;
+    --font: system-ui, 'sauce code pro', 'Hack', 'Terminus', 'hack-subset', sans-serif;
+    --font-alt: system-ui;
+    --font-h1: 'Fugaz One', system-ui, 'Hack', 'hack-subset', cursive;
     --font-code: 'Terminus', 'Hack', 'hack-subset', 'monospace';
 }
+
+* {
+    border: 0px;
+    font-family: "system-ui";
+    margin-left: 0.0096rem;
+    margin-right: 0.0096rem;
+    padding-left: 0.0096rem;
+    padding-right: 0.0096rem;
+    padding-bottom: 0.0096rem;
+    padding-top: 0.0096rem;
+  }
 
 body { 
     background: var(--background);
@@ -45,7 +58,6 @@ code {
     background: var(--background-alt);
     color: var(--code);
     box-shadow: 0rem 0rem 0.5rem 0.3rem var(--primary-alt);
-
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
