@@ -6,51 +6,39 @@
     --primary: #3d1375;
     --primary-alt: #712ac3bc;
     
-    --secondary: #1AE5BE;
-    --secondary-alt: #3a8475;
+    --secondary: #05f4c5;
+    --secondary-alt: #359683;
     
-    --compliment: #02b6de;
+    --compliment: #0088ff;
     --compliment-alt: #ff00d4;
 
     --text: #dacafb;
-    --text-primary: #1AE5BE;
+    --text-primary: #05f4c5;
     --text-alt: #10001c;
     
     --error: #ff004c;
     --code: #0088ff;
 
     /* define fonts */
-    --font-menu: 'hack-subset', 'Font Awesome Brands';
-    --font: system-ui, 'sauce code pro', 'Hack', 'Terminus', 'hack-subset', sans-serif;
+    --font-menu: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+    --font: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
     --font-alt: system-ui;
-    --font-h1: 'Fugaz One', system-ui, 'Hack', 'hack-subset', cursive;
-    --font-code: 'Terminus', 'Hack', 'hack-subset', 'monospace';
+    --font-h1: 'Fugaz One','Font Awesome 6 Brands', 'Font Awesome 6 Free', 'hack-subset', cursive;
+    --font-code: 'Terminus', 'hack-subset', 'monospace';
 }
-
-* {
-    border: 0px;
-    font-family: "system-ui";
-    margin-left: 0.0096rem;
-    margin-right: 0.0096rem;
-    padding-left: 0.0096rem;
-    padding-right: 0.0096rem;
-    padding-bottom: 0.0096rem;
-    padding-top: 0.0096rem;
-  }
 
 body { 
     background: var(--background);
 }
 
 .border {
-    border: 0.096rem solid var(--secondary);
-    box-shadow: 0 -0rem 2.96rem var(--primary-alt);
+
 }
 
 /* Code */
 code {
     align-content: justify;
-    font-family: 'Terminus', 'Hack', monospace;
+    font-family: var(--font-code);
     text-align: center;
     font-size: 75%;
     white-space: pre-wrap;
