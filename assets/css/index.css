@@ -8,7 +8,7 @@
 
 html {
     background-color: var(--background);
-    font-size: 1.36rem;
+    font-size: 1.5rem;
 }
 
 body {
@@ -29,7 +29,7 @@ h6 {
     color: var(--text);
     font-family: var(--font-h1);
     font-weight: 400;
-    text-shadow: .2rem .2rem 1rem var(--primary);
+    text-shadow: 0rem 0.3rem 0.9rem var(--primary);
     text-align: center;
     text-justify: center;
 }
@@ -38,9 +38,9 @@ p {
     font: var(--font);
     color: var(--text);
     justify-content: justify;
-    line-height: 1.2rem;
-    font-size: 18px;
-    text-shadow: 0rem .026rem 0.026rem var(--primary-alt);
+    line-height: 1rem;
+    font-size: 20px;
+    text-shadow: 0.03rem .003rem 0.2rem var(--secondary);
 }
 
 .icon {
@@ -221,6 +221,7 @@ header h1 {
     -ms-border-radius: 3.14rem;
     -o-border-radius: 3.14rem;
     text-shadow: 0rem 0rem 0.6rem var(--primary);
+    font-size: 24px;
 }
 
 .nav a:hover {
@@ -294,13 +295,12 @@ section a{
     display: box;
     box-sizing: border-box;
     color: var(--text);
-    padding: 4px 6px;
-    font-size: 18px;
-    border-radius: 3.96rem;
-    -webkit-border-radius: 3.96rem;
-    -moz-border-radius: 3.96rem;
-    -ms-border-radius: 3.96rem;
-    -o-border-radius: 3.96rem;
+    padding: 5px 6px;
+    border-radius: 3.14rem;
+    -webkit-border-radius: 3.14rem;
+    -moz-border-radius: 3.14rem;
+    -ms-border-radius: 3.14rem;
+    -o-border-radius: 3.14rem;
 }
 
 section a:hover {
