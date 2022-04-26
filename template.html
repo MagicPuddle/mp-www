@@ -2,61 +2,125 @@
 <html class="scrollbar" lang="EN">
 
 <head>
+  <!-- MagicPuddle Head Config -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap" rel="stylesheet">
-  <!-- Outsourced CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css"
     integrity="sha512-XgCw4Srl8lC1ECwcaHwAU0WnxQwHkqmInzg9wJLtGB7DRuMaXPuK2k9WJ2AwRDGdrgK9eJpZl2hUlLi2WQssmw=="
     crossorigin="anonymous">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styling -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--<link rel="stylesheet" href="assets/css/simplegrid.css" />-->
-  <!-- MagicPuddle -->
   <link rel="stylesheet" href="assets/css/index.css" />
   <link rel="stylesheet" href="assets/css/colors.css" />
   <link rel="stylesheet" href="assets/css/media-query.css" />
-  <script type="text/javascript" src="assets/js/mp-nav.js"></script>
-  <!-- Page Title -->
+
+  <!-- Page Related -->
   <title>MagicPuddle</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  <meta name="description"
+    content="MagicPuddle - an organization of meatbags providing solutions for other meatbags and vegtables">
+  <meta name="keywords" content="Computer Repair, electronic, repair, sofware, sales, service">
+  <meta name="author" content="MagicPuddle">
+
+  <!-- Dev Reload - remove or comment in production-->
+  <!--<base href="https://magicpuddle.netlify.app/" target="_blank">
+  <meta http-equiv="refresh" content="3">-->
 </head>
 
 <body>
-    <header>
-        <div class="header">
-          <h1 class="header">MagicPuddle</h1>
-          <div class="nav" id="nav-menu">
-            <a href="index.html" class="active"><i class="fa fa-igloo"></i></a>
-            <a href="latest.html"><i class="fa fa-newspaper"></i></a>
-            <a href="shop.html"><i class="fa fa-shop"></i></a>
-            <a href="docs.html"><i class="fa fa-book"></i></a>
-            <a href="contact.html"><i class="fa fa-phone"></i></a>
-            <a href="login.html"><i class="fa fa-user"></i></a>
-            <a href="javascript:void(0);" class="icon" onclick="menuOpen()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-        </div>
-      </header>
-  <br>
-  <section id="home" class="section corner-round border ">
-    <h1>Change Me</h1>
-    <p class="p-shadow">Meatbag template lord 'em ip sum ship</p>
-    <p class="p-shadow">Warning: May contain peanuts and/or squirells, saftey belt, and towel sold seperately!</p>
-  </section>
-  <br>
-  <footer">
-    <div>
-      <div class="credits">
-        <p>&copy; 2022 MagicPuddle | All Rights Reserved</p>
-      </div>
+  <header>
+    <img class="logo-img" src="assets/img/mplogo-sharp.png" />
+    <h1>MagicPuddle</h1>
+    <div class="nav corner-round border" id="nav-menu">
+      <a href="#about"><i class="fa fa-igloo"></i></a>
+      <a href="#latest"><i class="fa fa-newspaper"></i></a>
+      <a href="#shop"><i class="fa fa-shop"></i></a>
+      <a href="#contact"><i class="fa fa-address-book"></i></a>
+      <a href="#account"><i class="fa fa-user"></i></a>
     </div>
-    </footer>
-    <!-- Script section -->
+    </div>
+  </header>
+  <br>
+  <div id="about">
+    <br>
+    <section class="section corner-round border ">
+      <h1><i class="fa fa-hat-wizard"></i> Nutrition Facts</h1>
+      <p>MagicPuddle is an organization of meatbags, made with real bones and action chop.
+        We provide advanced plumbis technology for other meatbags and meatbag organizations.
+        Warrning: May contain peanuts and/or squirells, saftey belt, and towel sold seperately!</p>
+    </section>
+  </div>
+  <br>
+  <div id="latest">
+    <br>
+    <section class="section corner-round border ">
+      <h1><i class="fa fa-newspaper"></i> What's New</h1>
+      <p>Feeling insufficient, in areas we can not control.
+        We have realigned in order to rebuild the "Bubba Gump Shrimp Boat." 
+        and are forging "Lieutenant Dan's new legs".
+      </p>
+      <p>We will continue to extend our glorious plumbis out to the stars!</p>
+      
+    </section>
+  </div>
+  <br>
+  <div id="shop">
+    <br>
+    <section class="section corner-round border ">
+      <div>
+        <h1><i class="fa fa-shop"></i> Tech Shop</h1>
+        <p>MagicPuddle Tech Shops, diagnose, repair, build, and sell;
+           computer and computer related electronic systems and devices.
+          <br>
+          If you would like us to setup your new purchase on site for you, please schedule an appointment for pickup and drop off service .
+        </p>
+      </div>
+    </section>
+  </div>
+  <br>
+  <div id="contact">
+    <br>
+    <section class="section corner-round border">
+      <h1><i class="fa fa-address-book"></i> Contact Info</h1>
+        <div class="section section-menu">
+          <a href="tel:555-555-5555"><i class="fa fa-phone icon"></i></a>
+          <a href="sms:555-555-5555"><i class="fa fa-sms"></i></a>
+          <a href="mailto:magicpuddle@protonmail.com"><i class="fa fa-envelope icon"></i></a>
+        </div>
+        <p>Needing info on repair progress and shop related inqueries, use the links above.</p>
+        <p>You may <a href="#account"> <i class="fa fa-user"></i> login</a> 
+          to check the status of your repair and access our other services.</p>
+    </section>
+  </div>
+  <br>
+  <div id="account">
+    <br>
+    <section id="account" class="section corner-round border ">
+      <h1><i class="fa fa-users-cog"></i> Oozers</h1>
+      <p class="center"><a href="login.html"><i class="fa fa-user"></i> login</a> or 
+        <a href="create_account.html"><i class="fa fa-user-cog"></i> create an account</a>
+      </p>
+      <p>When you create an account you can then login to check the status of your repair anytime.
+        You also gain access to other services we offer to Oozers, customers and members.
+      </p>
+    </section>
+  </div>
+
+  <footer">
+    <div class="credits">
+      <p>&copy; 2022 MagicPuddle | All Rights Reserved</p>
+      </footer>
+      <!-- Script section -->
 </body>
 
 </html>
