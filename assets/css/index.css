@@ -1,9 +1,12 @@
+/* @import assets\css\menu.css */
+
 * {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
     background: none;
+    
   }
 
 html {
@@ -348,3 +351,8 @@ footer {
     text-shadow: .2rem .2rem 1rem var(--primary-alt);
 }
 
+* {
+    ::before,
+    ::after {
+  box-sizing: content-box;
+}
