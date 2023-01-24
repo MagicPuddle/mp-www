@@ -355,5 +355,6 @@ footer {
 * {
     ::before,
     ::after {
-  box-sizing: content-box;
+        box-sizing: content-box;
+    }
 }
