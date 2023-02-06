@@ -1,3 +1,3 @@
-# MagicPuddle - Public Website
+# MagicPuddle - Website
 
 Public facing company website.
