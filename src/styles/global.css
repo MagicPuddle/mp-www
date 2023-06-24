@@ -5,16 +5,16 @@
  */
  
 body {
-	font-family: Fugazone, Verdana, sans-serif;
+	font-family: Fugaz, Verdana, sans-serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 65ch;
 	text-align: left;
-	background-color: #fff;
+	background-color: #000000;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: #f6f3f3;
 }
 h1,
 h2,
