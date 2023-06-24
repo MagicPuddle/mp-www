@@ -1,0 +1,57 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <div class="nav corner-round border" id="nav-menu">
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </div>
+	</head>
+
+	<body>
+		<Header title={SITE_TITLE} />
+
+<body>
+  <header>
+    
+    
+      <a href="index.html"><i class="fa fa-igloo"></i></a>
+      <a href="shop.html"><i class="fa fa-shop"></i></a>
+      <a href="https://magicpuddle.github.io/"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+      <a href="contact.html"><i class="fa fa-address-book"></i></a>
+    </div>
+  </header>
+  
+  <div id="about">
+    
+    <section class="section corner-round border ">
+      <h1><i class="fa fa-hat-wizard"></i> </h1>
+      <h2>Nutrition Facts</h2>
+      
+        <p>MagicPuddle offers comprehensive managed technical solutions and expert support to both individuals and organizations.</p>
+      
+        <p>Our services are designed to help our clients achieve their technology goals and optimize their systems, from troubleshooting and maintenance to advanced IT strategy and planning.</p>
+      
+        <p>With a focus on personalized service and proactive solutions, we are committed to delivering the highest level of technical support and expertise to ensure our clients' success.</p>
+      
+        <h2>The Mission</h2>
+      
+        <p>Our mission is to provide our clients with high-quality IT and electronics services that meet their needs and exceed their expectations.</p>
+      
+        <p>We believe that customer satisfaction is of utmost importance, and strive to achieve it through cost-effective solutions that are tailored to each client's unique requirements.</p>
+      
+        <p>We are committed to delivering reliable and efficient services that keep our clients' businesses running smoothly, while maintaining a focus on quality and innovation.</p>
+      
+    </section>
+    <div class="credits">
+      <Footer />
+</div>
+    
+</body>
+  
+</html>
