@@ -1,0 +1,38 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+<header>
+    <img class="logo-img" src="assets/img/mplogo-sharp.png" />
+    <h1>MagicPuddle</h1>
+    <div class="nav corner-round border" id="nav-menu">
+      <a href="index.html"><i class="fa fa-igloo"></i></a>
+      <a </i></a>
+      <a href="https://magicpuddle.github.io/"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+      <a href="contact.html"><i class="fa fa-address-book"></i></a>
+    </div>
+
+<header>
+	<div class="nav corner-round border" id="nav-menu">
+	<h2>
+		{SITE_TITLE}
+	</h2>
+	<nav>
+		<HeaderLink href="/"><i class="fa fa-igloo"></i>Home</HeaderLink>
+		<HeaderLink href="shop.html"><i class="fa fa-shop"></i>Services</HeaderLink>
+		<HeaderLink href="shop.html"><i class="fa fa-shop"></i>Tech Shop</HeaderLink>
+		<HeaderLink href="/blog">Blog</HeaderLink>
+		<HeaderLink href="/about">About</HeaderLink>
+		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
+		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+	</nav>
+	</div>
+</header>
+<style>
+	header {
+		margin: 0em 0 2em;
+	}
+	h2 {
+		margin: 0.5em 0;
+	}
+</style>
