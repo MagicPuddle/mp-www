@@ -3,28 +3,27 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 <header>
-    <img class="logo-img" src="assets/img/mplogo-sharp.png" />
-    <h1>MagicPuddle</h1>
+    <img class="logo-img" src="/src/assets/img/mplogo-sharp.png" />
+	<h1>
+		{SITE_TITLE}
+	</h1>
     <div class="nav corner-round border" id="nav-menu">
       <a href="index.html"><i class="fa fa-igloo"></i></a>
-      <a </i></a>
       <a href="https://magicpuddle.github.io/"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
       <a href="contact.html"><i class="fa fa-address-book"></i></a>
     </div>
 
-<header>
+<HeaderLink>
 	<div class="nav corner-round border" id="nav-menu">
-	<h2>
-		{SITE_TITLE}
-	</h2>
 	<nav>
-		<HeaderLink href="/"><i class="fa fa-igloo"></i>Home</HeaderLink>
-		<HeaderLink href="shop.html"><i class="fa fa-shop"></i>Services</HeaderLink>
-		<HeaderLink href="shop.html"><i class="fa fa-shop"></i>Tech Shop</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+		<HeaderLink href="/"><i class="fa fa-igloo"></i></HeaderLink>
+		<HeaderLink href="/shop.html"><i class="fa fa-cog"></i></HeaderLink>
+		<HeaderLink href="/shop.html"><i class="fa fa-shop"></i></HeaderLink>
+		<HeaderLink href="/blog"><i class="fa fa-blog"></i></HeaderLink>
+		<HeaderLink href="/about"><i class="fa fa-list"></i></HeaderLink>
+		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank"><i class="fa fa-twitter"></i></HeaderLink>
+		<HeaderLink href="https://github.com/withastro/astro" target="_blank"><i class="fa fa-github-alt"></i></HeaderLink>
+		<HeaderLink href="/contact.html"><i class="fa fa-address-book"></i></HeaderLink>
 	</nav>
 	</div>
 </header>
