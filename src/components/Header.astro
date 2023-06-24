@@ -3,19 +3,11 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 <header>
-    <img class="logo-img" src="/src/assets/img/mplogo-sharp.png" />
-	<h1>
-		{SITE_TITLE}
-	</h1>
-    <div class="nav corner-round border" id="nav-menu">
-      <a href="index.html"><i class="fa fa-igloo"></i></a>
-      <a href="https://magicpuddle.github.io/"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-      <a href="contact.html"><i class="fa fa-address-book"></i></a>
-    </div>
+	<img class="logo-img" src="src/assets/img/mplogo-sharp.png" />
+    <h1>{SITE_TITLE}</h1>
 
 <HeaderLink>
-	<div class="nav corner-round border" id="nav-menu">
-	<nav>
+	<nav class="nav menu corner-round border" id="nav-menu">
 		<HeaderLink href="/"><i class="fa fa-igloo"></i></HeaderLink>
 		<HeaderLink href="/shop.html"><i class="fa fa-cog"></i></HeaderLink>
 		<HeaderLink href="/shop.html"><i class="fa fa-shop"></i></HeaderLink>
@@ -25,7 +17,6 @@ import { SITE_TITLE } from '../consts';
 		<HeaderLink href="https://github.com/withastro/astro" target="_blank"><i class="fa fa-github-alt"></i></HeaderLink>
 		<HeaderLink href="/contact.html"><i class="fa fa-address-book"></i></HeaderLink>
 	</nav>
-	</div>
 </header>
 <style>
 	header {
