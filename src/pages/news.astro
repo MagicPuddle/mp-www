@@ -3,12 +3,14 @@ import Layout from '../layouts/BlogPost.astro';
 ---
 
 <Layout
-	title="About"
-	description="MagicPuddle About"
+	title="News"
+	description="About"
 	pubDate={new Date('August 08 2021')}
 	updatedDate={new Date('August 08 2022')}
-	heroImage="/placeholder-about.jpg"
->
+	>
+    <section class="corner-round border">
+		<div id="about">
+	<h1>About</h1>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
@@ -29,4 +31,6 @@ import Layout from '../layouts/BlogPost.astro';
 		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
 		massa massa ultricies mi.
 	</p>
+	</div>
+</section>
 </Layout>

@@ -44,7 +44,7 @@ p {
     text-align: center;
     line-height: 1rem;
     font-size: 20px;
-    text-shadow: 0.03rem .003rem 0.2rem var(--secondary);
+    text-shadow: 0.03rem .003rem 0.1rem var(--secondary);
 }
 
 .icon {
@@ -124,12 +124,11 @@ header {
     position: fixed;
     float: none;
     margin-top: auto;
-    width: fit-content;
-    height: fit-content;
+    width: 100;
+    height: 90px;
     top: 12px;
     left: 0;
-    right: 326px;
-    z-index: 999;
+    right: 360px;
 }
 
 header h1 {
@@ -268,8 +267,8 @@ section {
     font: var(--font);
     justify-items: center;
     justify-content: space-between;
-    width: 720px;
-    max-width: 87%;
+    width: 100%;
+    max-width: 100%;
     min-height: 260px;
     overflow: hidden;
     scroll-padding-bottom: 0.9rem;
@@ -330,7 +329,7 @@ footer {
 }
 
 .credits {
-    height: 18px;
+    height: 40px;
     color: var(--text);
     width: 100%;
     display: box;
@@ -345,7 +344,7 @@ footer {
 }
 
 .credits p {
-    font-size: xx-small;
+    font-size: small;
     text-align: center;
     text-justify: center;
     color: var(--secondary);
