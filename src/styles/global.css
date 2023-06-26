@@ -59,10 +59,11 @@ img {
 	width: auto;
 	border-radius: 1rem;
 }
-img .div-image {
+
+img.div-image {
 	position: relative;
-	left: 0px;
-	top: -20px;
+	height: 60px;
+	width: 100%;
 }
 
 code {
@@ -85,9 +86,11 @@ blockquote {
 	margin: 0px;
 	font-style: italic;
 }
+
 time {
 	align-items: center;
 }
+
 article {
 	padding: 40px;
 }
