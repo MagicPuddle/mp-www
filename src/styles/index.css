@@ -330,24 +330,26 @@ footer {
 
 .credits {
     position: fixed;
-    height: auto;
+    height: 26;
     color: var(--text);
-    width: 74%;
+    width: 100%;
     display: box;
     bottom: 0;
     border: 0.09rem solid var(--secondary);
-    border-top-left-radius: 3.14rem;
     border-top-right-radius: 3.14rem;
-    border-bottom: none;
+    border-top-left-radius: 3.14rem;
     background-color: var(--background-alt);
     box-shadow: 0rem 0rem 0.9rem 0.096rem var(--primary);
+    border-bottom: 0;
+    padding: auto;
+    left: -2px;
 }
 
 .credits p {
     font-size: small;
-
     color: var(--secondary);
     text-shadow: .2rem .2rem 1rem var(--primary-alt);
+    padding:auto;
 }
 
 * {
