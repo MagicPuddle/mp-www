@@ -6,8 +6,8 @@
     margin-right: auto;
     padding: 0;
     background: none;
-    
-  }
+
+}
 
 html {
     background-color: var(--background);
@@ -47,9 +47,7 @@ p {
     text-shadow: 0.03rem .003rem 0.1rem var(--secondary);
 }
 
-.icon {
-
-}
+.icon {}
 
 br {
     width: 100%;
@@ -60,14 +58,15 @@ hr {
     margin-bottom: 140px;
 }
 
-.right{
-    float:right;
+.right {
+    float: right;
 }
 
-.left{
-    float:left;
+.left {
+    float: left;
 }
-.center{
+
+.center {
     text-align: center;
     float: none;
     margin-left: auto;
@@ -75,6 +74,7 @@ hr {
     padding-left: 0.9rem;
     padding-right: 0.9rem;
 }
+
 .scrollbar {
     /* Add the ability to scroll */
 }
@@ -103,7 +103,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    right:0;
+    right: 0;
 }
 
 .border {
@@ -156,7 +156,7 @@ header h1 {
     background-color: var(--background-alt);
     float: none;
     justify-content: center;
-    position:fixed;
+    position: fixed;
     padding-left: auto;
     padding-right: auto;
     margin-left: auto;
@@ -168,7 +168,7 @@ header h1 {
     box-shadow: 0rem 0rem 0.4rem 0rem var(--secondary);
 }
 
-#nav-menu {   
+#nav-menu {
     float: none;
     border-width: 2px;
     border-color: var(--secondary) var(--primary-alt) var(--secondary);
@@ -247,13 +247,13 @@ header h1 {
     display: none;
 }
 
-.nav a:focus {    
+.nav a:focus {
     background-color: var(--primary);
     color: var(--secondary);
     outline-style: solid;
 }
 
-#about{
+#about {
     margin-top: -26px;
 }
 
@@ -289,7 +289,7 @@ section p {
     z-index: auto;
 }
 
-section a{
+section a {
     width: 100%;
     justify-items: center;
     justify-content: center;
@@ -329,11 +329,11 @@ footer {
 }
 
 .credits {
-    height: 40px;
-    color: var(--text);
-    width: 100%;
-    display: box;
     position: fixed;
+    height: auto;
+    color: var(--text);
+    width: 74%;
+    display: box;
     bottom: 0;
     border: 0.09rem solid var(--secondary);
     border-top-left-radius: 3.14rem;
@@ -345,13 +345,13 @@ footer {
 
 .credits p {
     font-size: small;
-    text-align: center;
-    text-justify: center;
+
     color: var(--secondary);
     text-shadow: .2rem .2rem 1rem var(--primary-alt);
 }
 
 * {
+
     ::before,
     ::after {
         box-sizing: content-box;

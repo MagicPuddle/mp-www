@@ -1,0 +1,32 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <body>
+        <Header />
+        <section class="corner-round border">
+            <div id="about">
+                <h1><i class="fa fa-magic"></i></h1>
+                <h2>The Mission</h2>
+                <p>
+                    Our mission is to provide our clients with high-quality IT
+                    and electronics services that meet their needs and exceed
+                    their expectations. We believe that customer satisfaction is
+                    of utmost importance, and strive to achieve it through
+                    cost-effective solutions that are tailored to each client's
+                    unique requirements. We are committed to delivering reliable
+                    and efficient services that keep our clients' businesses
+                    running smoothly, while maintaining a focus on quality and
+                    innovation.
+                </p>
+            </div>
+        </section>
+    </body>
+    <Footer />
+</html>
