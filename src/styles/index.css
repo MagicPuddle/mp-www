@@ -325,8 +325,8 @@ footer {
     text-shadow: .2rem .2rem 1rem var(--primary-alt);
     padding: auto;
 }
-#posts{
-    padding: 2rem;
+time{
+    padding-left: 7%;
 }
 * {
 
