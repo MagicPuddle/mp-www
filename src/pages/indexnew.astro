@@ -5,16 +5,22 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  <body>
+
+  <body class="bg-gray-100">
     <Header />
-    <section class="corner-round border">
-      <img class="div-banner" src="banner.png" />
+
+    <section class="corner-round border p-4">
+      <img class="div-banner" src="banner.png" alt="Banner" />
+
       <div id="about">
-        <h2><i class="fa-regular fa-hat-wizard"></i> Nutrition Facts <i class="fa-solid fa-magic"></i></h2>
-        <p>
+        <h2 class="flex items-center">
+          <i class="far fa-hat-wizard mr-2"></i>
+          Nutrition Facts
+          <i class="fas fa-magic ml-2"></i>
+        </h2>
+        <p class="mt-4">
           MagicPuddle offers comprehensive managed technical solutions and
           expert support to both individuals and organizations. Our services are
           designed to help our clients achieve their technology goals and
@@ -26,6 +32,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </p>
       </div>
     </section>
+
     <Footer />
   </body>
 </html>
@@ -39,7 +46,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 @media (min-width: 640px) {
     .corner-round {
-
+        border-radius: 8px;
     }
 }
 </style>

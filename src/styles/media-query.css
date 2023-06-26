@@ -6,6 +6,20 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
+/* New */
+
+@media (max-width: 640px) {
+    .div-banner {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 640px) {
+    .corner-round {
+        ;
+    }
+}
+
 /* Larger than mobile */
 @media(min-width: 400px) {
     html {
