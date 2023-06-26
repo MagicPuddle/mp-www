@@ -16,9 +16,6 @@ html {
 
 body {
     background-color: var(--background);
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     color: var(--text);
     overflow-y: scroll;
 }
@@ -262,8 +259,6 @@ section {
     margin-bottom: 155px;
     padding-bottom: 1rem;
     background-color: var(--background-alt);
-    box-sizing: border-box;
-    display: box;
     font: var(--font);
     justify-items: center;
     justify-content: space-between;
