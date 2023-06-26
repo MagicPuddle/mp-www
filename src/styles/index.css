@@ -346,7 +346,7 @@ footer {
 }
 
 .credits p {
-    font-size: small;
+    font-size: x-small;
     color: var(--secondary);
     text-shadow: .2rem .2rem 1rem var(--primary-alt);
     padding:auto;
