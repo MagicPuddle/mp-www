@@ -1,20 +1,15 @@
 /* @import assets\css\menu.css */
 
 * {
-    margin: 0;
+    margin: auto;
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
+    padding: auto;
     background: none;
 
 }
 
-html {
-    background-color: var(--background);
-    font-size: 1.5rem;
-}
-
-body {
+html body {
     background-color: var(--background);
     color: var(--text);
     overflow-y: scroll;
@@ -31,7 +26,6 @@ h6 {
     font-weight: 400;
     text-shadow: 0rem 0.3rem 0.9rem var(--primary);
     text-align: center;
-    text-justify: center;
 }
 
 p {
@@ -39,14 +33,9 @@ p {
     color: var(--text);
     justify-content: center;
     text-align: center;
-    line-height: 1rem;
-    font-size: 20px;
-    text-shadow: 0.03rem .003rem 0.1rem var(--secondary);
-}
-
-.icon {
-    margin: auto;
-    grid: hidden;
+    line-height: 1.26rem;
+    font-size: 16px;
+    text-shadow: 0.03rem .003rem 0.2rem var(--secondary);
 }
 
 br {
@@ -101,9 +90,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
 }
 
 .border {
@@ -123,7 +109,6 @@ header {
 .logo-img {
     position: fixed;
     float: none;
-    margin-top: auto;
     width: 100;
     height: 90px;
     top: 12px;
@@ -138,22 +123,21 @@ header h1 {
     font-family: var(--font-h1);
     font-weight: 400;
     text-align: center;
-    text-justify: auto;
     text-shadow: .2rem .2rem 1rem var(--primary-alt);
     font-size: xxx-large;
-    line-height: 60%;
+    line-height: 100%;
     color: var(--text);
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    top: 3px;
+    top: 26px;
     left: 54px;
     right: 0;
     z-index: 966;
 }
 
 .nav {
-    background-color: var(--background-alt);
+
     float: none;
     justify-content: center;
     position: fixed;
@@ -164,7 +148,7 @@ header h1 {
     left: 0rem;
     right: 0rem;
     top: 86px;
-    border: 1px inset var(--primary);
+    border: 1.26rem inset var(--primary);
     box-shadow: 0rem 0rem 0.4rem 0rem var(--secondary);
 }
 
@@ -175,10 +159,6 @@ header h1 {
     box-shadow: 0rem 0rem 0.3rem var(--secondary);
     background-color: var(--background-alt);
     border-radius: 3.14rem;
-    -webkit-border-radius: 3.14rem;
-    -moz-border-radius: 3.14rem;
-    -ms-border-radius: 3.14rem;
-    -o-border-radius: 3.14rem;
     margin-left: auto;
     margin-right: auto;
     padding: 4px;
@@ -201,8 +181,8 @@ header h1 {
 }
 
 .nav .active:active {
-    background-color: var(--primary);
-    color: var(--secondary);
+    background-color: var(--primary-alt);
+    color: var(--secondary-alt);
     border: 1px solid var(--secondary);
     box-shadow: 0rem 0rem 00.096rem 0.096rem var(--secondary);
 }
@@ -215,16 +195,11 @@ header h1 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 12px;
+    padding: 9px 13px;
     text-decoration: none;
-    font-size: 14px;
     border-radius: 3.14rem;
-    -webkit-border-radius: 3.14rem;
-    -moz-border-radius: 3.14rem;
-    -ms-border-radius: 3.14rem;
-    -o-border-radius: 3.14rem;
     text-shadow: 0rem 0rem 0.6rem var(--primary);
-    font-size: 24px;
+
 }
 
 .nav a:hover {
@@ -248,8 +223,8 @@ header h1 {
 }
 
 .nav a:focus {
-    background-color: var(--primary);
-    color: var(--secondary);
+    background-color: var(--secondary);
+    color: var(--primary);
     outline-style: solid;
 }
 
@@ -340,7 +315,8 @@ footer {
     box-shadow: 0rem 0rem 0.9rem 0.096rem var(--primary);
     border-bottom: 0;
     padding: auto;
-    left: -2px;
+    left: -1px;
+    right: -1px;
 }
 
 .credits p {
@@ -349,7 +325,9 @@ footer {
     text-shadow: .2rem .2rem 1rem var(--primary-alt);
     padding: auto;
 }
-
+#posts{
+    padding: 2rem;
+}
 * {
 
     ::before,

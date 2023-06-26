@@ -36,7 +36,10 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
-			<section >
+			<section class="corner-round border">
+				<img class="div-banner" src="banner.png">
+				<div id="about">
+					<h1>Latest</h1>
 				<ul>
 					{
 						posts.map((post) => (
@@ -47,6 +50,7 @@ const posts = (await getCollection('blog')).sort(
 						))
 					}
 				</ul>
+				</div>
 			</section>
 		</main>
 		<Footer />
