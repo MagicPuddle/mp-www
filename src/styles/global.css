@@ -3,7 +3,7 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
- 
+
 body {
 	font-family: Fugaz, Verdana, sans-serif;
 	margin: auto;
@@ -16,6 +16,7 @@ body {
 	line-height: 1.5;
 	color: #f6f3f3;
 }
+
 h1,
 h2,
 h3,
@@ -26,39 +27,57 @@ strong,
 b {
 	color: #222;
 }
+
 a {
 	color: #3273dc;
 }
+
 nav a {
 	margin-right: 10px;
 }
+
 textarea {
 	width: 100%;
 	font-size: 16px;
 }
+
 input {
 	font-size: 16px;
 }
+
 content {
 	line-height: 1.6;
 }
+
 table {
 	width: 100%;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
+	width: auto;
+	border-radius: 1rem;
 }
+img .div-image {
+	position: relative;
+	left: 0px;
+	top: -20px;
+}
+
 code {
 	padding: 2px 5px;
 	background-color: #f2f2f2;
 }
+
 pre {
 	padding: 1rem;
 }
-pre > code {
+
+pre>code {
 	all: unset;
 }
+
 blockquote {
 	border: 1px solid #999;
 	color: #222;
@@ -66,9 +85,13 @@ blockquote {
 	margin: 0px;
 	font-style: italic;
 }
-article{
+time {
+	align-items: center;
+}
+article {
 	padding: 40px;
 }
-footer{
-	padding:auto;
+
+footer {
+	padding: auto;
 }

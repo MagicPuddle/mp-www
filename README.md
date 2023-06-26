@@ -1,5 +1,3 @@
----
+# Website
 
----
-
-To change the site name edit ```/conts.ts ```.
+:magic_wand: [MagicPuddle](https://magicpuddle.netlify.app/) public facing company website.
