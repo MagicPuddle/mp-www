@@ -1,3 +1,3 @@
-# Website
+# <img src="./public/logo.svg" width="50" height="50"> [MagicPuddle](https://magicpuddle.netlify.app/)  
 
-:magic_wand: [MagicPuddle](https://magicpuddle.netlify.app/) public facing company website.
+*Public facing website.*
