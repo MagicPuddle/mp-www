@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import MyReactComponent from "../components/interactive-component.jsx";
 ---
 
 <html>
@@ -12,15 +13,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <Header />
 
     <section class="corner-round border p-4">
-      <img class="div-banner" src="/assets/images/branding/banner.png" alt="Banner" />
+      <img class="div-banner" src="/banner.png" alt="Banner" />
 
       <div id="about">
-        <h2 class="flex items-center">
-          <i class="far fa-hat-wizard mr-2"></i>
+        <h2 class="items-center">
+          <i class="far fa-hat-wizard"></i>
           Nutrition Facts
-          <i class="fas fa-magic ml-2"></i>
+          <i class="fas fa-magic"></i>
         </h2>
-        <p class="mt-4">
+        <p class="about">
           MagicPuddle offers comprehensive managed technical solutions and
           expert support to both individuals and organizations. Our services are
           designed to help our clients achieve their technology goals and
@@ -34,19 +35,18 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     </section>
 
     <Footer />
+    <style>
+      @media (max-width: 640px) {
+        .div-banner {
+          max-width: 100%;
+        }
+      }
+
+      @media (min-width: 640px) {
+        .corner-round {
+          border-radius: 7rem;
+        }
+      }
+    </style>
   </body>
 </html>
-
-<style>
-@media (max-width: 640px) {
-    .div-banner {
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 640px) {
-    .corner-round {
-        border-radius: 8px;
-    }
-}
-</style>

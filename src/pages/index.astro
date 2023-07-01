@@ -3,6 +3,8 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+import MyReactComponent from '../components/interactive-component.jsx';
 ---
 
 <!DOCTYPE html>
@@ -38,8 +40,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 }
 
 @media (min-width: 640px) {
-    .corner-round {
-
+  .div-banner {
+        max-width: 100%;
     }
 }
+
+.corner-round {
+          border-radius: 7rem;
+}
+
 </style>
