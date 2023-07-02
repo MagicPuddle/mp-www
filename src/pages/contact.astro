@@ -13,14 +13,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <section class="corner-round border">
       <img class="div-banner" src="/banner.png" />
       <div id="about">
-        <h2><i class="fa-regular fa-address-book"></i> Contact <i class="fa-regular fa-calendar-check"></i></h2>
+        <h2>
+          <i class="fa-regular fa-address-book"></i> Contact <i
+            class="fa-regular fa-calendar-check"></i>
+        </h2>
         <p>
-          If you need any more information or have any questions, please feel free to contact us. 
-          We are here to assist you and provide the support you may require.
+          If you need any more information or have any questions, please feel
+          free to contact us. We are here to assist you and provide the support
+          you may require.
         </p>
         <br />
         <p>
-          <h1><a href="mailto:MagicPuddle@pm.me"><i class="fa fa-envelope"></i></a></h1>
+          <h1>
+            <a href="mailto:MagicPuddle@pm.me"><i class="fa fa-envelope"></i></a
+            >
+          </h1>
           <!-- | <a href="SMS:000-000-0000"><i class="fa fa-sms"></i></a> 
             | <a href="tel:000-000-0000"><i class="fa fa-phone"></i></a>
         -->
@@ -28,24 +35,22 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       </div>
     </section>
     <Footer />
+    <style>
+      @media (max-width: 640px) {
+        .div-banner {
+          max-width: 100%;
+        }
+      }
+
+      @media (min-width: 640px) {
+        .div-banner {
+          max-width: 100%;
+        }
+      }
+
+      .corner-round {
+        border-radius: 7rem;
+      }
+    </style>
   </body>
 </html>
-
-<style>
-  @media (max-width: 640px) {
-      .div-banner {
-          max-width: 100%;
-      }
-  }
-  
-  @media (min-width: 640px) {
-    .div-banner {
-          max-width: 100%;
-      }
-  }
-  
-  .corner-round {
-            border-radius: 7rem;
-  }
-  
-  </style>
