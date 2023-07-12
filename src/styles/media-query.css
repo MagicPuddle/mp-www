@@ -1,4 +1,4 @@
-/* Media Queries */
+/* Standard Media Queries */
 /*
 Note: The best way to structure the use of media queries is to create the queries
 near the relevant code. For example, if you wanted to change the styles for buttons
@@ -6,50 +6,33 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-/* New */
-
-@media (max-width: 640px) {
-    .div-banner {
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 640px) {
-    .corner-round {
-        ;
-    }
-}
-
-/* Larger than mobile */
-@media(min-width: 400px) {
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+    /* Adjust styling for small devices here */
     html {
         width: 100%;
     }
 }
 
-/* Larger than phablet (also point when grid becomes active) */
-@media(min-width: 550px) {
+/* Medium devices (between 577px and 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Adjust styling for medium devices here */
     html {
         width: 100%;
     }
 }
 
-/* Larger than tablet */
-@media(min-width: 750px) {
+/* Large devices (between 769px and 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Adjust styling for large devices here */
     html {
         width: 100%;
     }
 }
 
-/* Larger than desktop */
-@media(min-width: 1000px) {
-    html {
-        width: 100%;
-    }
-}
-
-/* Larger than Desktop HD */
-@media(min-width: 1200px) {
+/* Extra-large devices (993px and above) */
+@media (min-width: 993px) {
+    /* Adjust styling for extra-large devices here */
     html {
         width: 100%;
     }

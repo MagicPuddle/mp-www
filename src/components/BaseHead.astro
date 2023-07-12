@@ -1,13 +1,18 @@
 ---
+// GodGas Theme
+
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 
+// JavaScript
 import "../js/mp-nav.js"
+// CSS
 import "../styles/global.css";
 import "../styles/colors.css";
 import "../styles/index.css";
 import "../styles/media-query.css";
-import "../styles/menu.css";
+// Font
+import '@fontsource/fugaz-one';
 
 export interface Props {
   title: string;
@@ -71,8 +76,6 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 />
 
 <!-- Custom Styling -->
-
-
 <link rel="icon" type="image/x-icon" href="favicon.svg" />
 
 

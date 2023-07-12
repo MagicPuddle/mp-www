@@ -4,9 +4,11 @@ import { SITE_TITLE } from "../consts";
 ---
 
 <header>
-	<nav class="nav nav-menu" id="nav-menu">
+	<logo class="logo" id="nav-logo">
 		<img class="logo-img" src="/logo.svg" />
 		<h1>{SITE_TITLE}</h1>
+	</logo>
+	<nav class="nav"  id="nav-menu">
 		<HeaderLink href="/"><i class="fa-regular fa-igloo"></i></HeaderLink>
 		<!-- <HeaderLink href="/blog"><i class="fa-regular fa-newspaper"></i></HeaderLink> -->
 		<HeaderLink href="/techshop"><i class="fa-regular fa-shop"></i></HeaderLink>
@@ -17,10 +19,5 @@ import { SITE_TITLE } from "../consts";
 </header>
 
 <style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
+
 </style>
