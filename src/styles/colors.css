@@ -1,17 +1,17 @@
 :root {
     /* define colors */
-    --background: #06030b;
-    --background-alt: #10001c;
-
-    --primary: #3d1375;
-    --primary-alt: #712ac3bc;
+    --background: #080113;
+    --background-alt: #0b001c;
+    
+    --primary: #271874;
+    --primary-alt: #271874; /* Keeping the same color */
     
     --secondary: #05f4c5;
     --secondary-alt: #359683;
     
     --compliment: #0088ff;
     --compliment-alt: #ff00d4;
-
+    
     --text: #e5dafa;
     --text-primary: #05f4c5;
     --text-alt: #10001c;
@@ -21,14 +21,18 @@
 
     /* define fonts */
     --font-menu: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
-    --font: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+    --font: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
     --font-alt: system-ui;
     --font-h1: 'Fugaz One','Font Awesome 6 Brands', 'Font Awesome 6 Free', 'hack-subset', cursive;
     --font-code: 'Terminus', 'hack-subset', 'monospace';
 }
 
 body { 
-    background: var(--background);
+    background-color: var(--background);
+}
+
+section{
+    background-color: var(--background-alt);
 }
 
 .border {
