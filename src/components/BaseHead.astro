@@ -5,14 +5,17 @@
 // all pages through the use of the <BaseHead /> component.
 
 // JavaScript
-import "../js/mp-nav.js"
+import "../js/mp-nav.js";
 // CSS
 import "../styles/global.css";
 import "../styles/colors.css";
 import "../styles/media-query.css";
+// import "../styles/menu.css"
 import "../styles/index.css";
+
 // Font
-import '@fontsource/fugaz-one';
+import "@fontsource/fugaz-one";
+
 export interface Props {
   title: string;
   description: string;
@@ -29,6 +32,9 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
+
+<!-- Custom Styling -->
+<link rel="icon" type="image/x-icon" href="favicon.svg" />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -74,7 +80,9 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
   referrerpolicy="no-referrer"
 />
 
-<!-- Custom Styling -->
-<link rel="icon" type="image/x-icon" href="favicon.svg" />
-
-
+<noscript>
+  <div class="alert alert-with-icon alert-error no-js-alert"
+  data-nosnippet="true">
+  <i class="icon alert-icon icon-alert-alt"></i><p>We’re sorry, some parts of the Airbnb website don’t work properly without JavaScript enabled.</p>
+</div>
+</noscript>
