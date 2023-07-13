@@ -1,3 +1,69 @@
+:root {
+  /* define colors */
+  --background: #080113;
+  --background-alt: #0b001c;
+  --primary: #271874;
+  --primary-alt: #342771;
+  --secondary: #05f4c5;
+  --secondary-alt: #359683;
+  --compliment: #0088ff;
+  --compliment-alt: #ff00d4;
+  --text: #e5dafa;
+  --text-primary: #05f4c5;
+  --text-alt: #10001c;
+  --error: #ff004c;
+  --code: #0088ff;
+  /* define fonts */
+  --font-menu: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+  --font: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+  --font-alt: system-ui;
+  --font-h1: 'Fugaz One', 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'hack-subset', cursive;
+  --font-code: 'Terminus', 'hack-subset', 'monospace';
+}
+
+/* Additional styles */
+
+#theme-toggle-label {
+  background-color: var(--toggle-label-background);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7.5px;
+  position: fixed;
+  width: 66px;
+  height: 30px;
+  transform: scale(1.2);
+  box-shadow: 0 0 0 1px var(--toggle-border-color);
+  outline: 1px solid transparent;
+}
+
+/* Body */
+body {
+  background-color: var(--background);
+}
+
+/* Code */
+code {
+  align-content: justify;
+  font-family: var(--font-code);
+  text-align: center;
+  font-size: 75%;
+  white-space: pre-wrap;
+  padding: 0.3rem;
+  background: var(--background-alt);
+  color: var(--code);
+  box-shadow: 0rem 0rem 0.5rem 0.3rem var(--primary-alt);
+  border-radius: 1rem;
+}
+
+pre>code {
+  font-family: 'Terminus', 'Hack', monospace;
+  padding: 2rem 2rem;
+  white-space: pre;
+}
+
 * {
   margin: auto;
   box-sizing: border-box;
@@ -88,7 +154,7 @@ hr {
   right: 0px;
 }
 
-header h1 {
+.header h1 {
   position: fixed;
   font-family: var(--font-h1);
   font-weight: 400;
@@ -99,6 +165,11 @@ header h1 {
   right: 0px;
   top: 43px;
   z-index: 980;
+}
+
+header img {
+  width: 100%;
+  height: 60px;
 }
 
 .nav {
@@ -316,58 +387,8 @@ img {
   border-radius: 1rem;
 }
 
-img.div-image {
+.div-image {
   position: relative;
   height: 60px;
   width: 100%;
-}
-
-:root {
-  /* define colors */
-  --background: #080113;
-  --background-alt: #0b001c;
-  --primary: #271874;
-  --primary-alt: #271874;
-  --secondary: #05f4c5;
-  --secondary-alt: #359683;
-  --compliment: #0088ff;
-  --compliment-alt: #ff00d4;
-  --text: #e5dafa;
-  --text-primary: #05f4c5;
-  --text-alt: #10001c;
-  --error: #ff004c;
-  --code: #0088ff;
-  /* define fonts */
-  --font-menu: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
-  --font: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
-  --font-alt: system-ui;
-  --font-h1: 'Fugaz One', 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'hack-subset', cursive;
-  --font-code: 'Terminus', 'hack-subset', 'monospace';
-}
-
-/* Additional styles */
-
-/* Body */
-body {
-  background-color: var(--background);
-}
-
-/* Code */
-code {
-  align-content: justify;
-  font-family: var(--font-code);
-  text-align: center;
-  font-size: 75%;
-  white-space: pre-wrap;
-  padding: 0.3rem;
-  background: var(--background-alt);
-  color: var(--code);
-  box-shadow: 0rem 0rem 0.5rem 0.3rem var(--primary-alt);
-  border-radius: 1rem;
-}
-
-pre>code {
-  font-family: 'Terminus', 'Hack', monospace;
-  padding: 2rem 2rem;
-  white-space: pre;
 }

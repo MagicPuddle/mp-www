@@ -10,11 +10,9 @@ body {
 	padding: 1rem;
 	max-width: 65ch;
 	text-align: center;
-	background-color: var(--backgroun);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #f6f3f3;
 }
 
 h1,
@@ -25,11 +23,11 @@ h5,
 h6,
 strong,
 b {
-	color: #222;
+	color: var(--primary);
 }
 
 a {
-	color: #3273dc;
+	color: var(--compliment);
 }
 
 nav a {
@@ -60,8 +58,7 @@ img {
 	border-radius: 1rem;
 }
 
-img.div-image {
-	position: relative;
+.div-banner {
 	height: 60px;
 	width: 100%;
 }
