@@ -1,15 +1,9 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-// import LatestBlogPosts from "../components/LatestBlogPosts.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 ---
 
-<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-
-<Header />
+<BaseLayout />
 <!-- <LatestBlogPosts /> -->
   <section class="corner-round border">
     <img class="div-banner" src="/banner.png" alt="Banner" />
@@ -23,4 +17,4 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       </p>
     </div>
   </section>
-<Footer />
+</BaseLayout>
