@@ -35,7 +35,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </article>
         -->
         <article>
-          <form
+          <form netlify
             class="contact-form"
             name="contact-form"
             method="POST"
@@ -68,6 +68,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       </div>
 
       <Footer />
+
       <style>
         /* Styles for the modern contact section */
         .contact-info {
@@ -114,4 +115,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       </style>
     </section>
   </body>
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      const formData = new FormData(this);
+  
+      fetch("/thank-you/english.html" {
+        method: "POST",
+        body: formData,
+      })
+        .then(response => response.json())
+        .then(data => {
+          // Handle the response data (success message, error message, etc.)
+          console.log(data);
+          if (data.success) {
+            alert("Message sent successfully!");
+          } else {
+            alert("Message could not be sent. Please try again.");
+          }
+        })
+        .catch(error => {
+          console.error("Error:", error);
+          alert("An error occurred. Please try again later.");
+        });
+    });
+  </script>
+  
 </html>
