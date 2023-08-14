@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import ContactForm from '../components/ContactForm.svelte';
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
@@ -26,24 +27,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           </p>
         </article>
         <br />
-        <form class="contact-form" name="contact" data-netlify="true" netlify>
-          <p>
-            <label><input type="text" name="name" placeholder="Name" required /></label>
-          </p>
-          <p>
-            <label><input type="email" name="email" placeholder="Email" required /></label>
-          </p>
-          <p>
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows="4"
-              required></textarea>
-          </p>
-          <p>
-            <button type="submit">Send Message</button>
-          </p>
-        </form>
+        <template>
+          <article>
+            <h1>Contact Us</h1>
+            <ContactForm />
+          </article>
+        </template>
+        
+        <script setup>
+        import ContactForm from '../components/ContactForm.svelte';
+        </script>
         <br />
       </div>
 
@@ -88,3 +81,4 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     </section>
   </body>
 </html>
+../components/ContactForm.jsx
