@@ -28,7 +28,6 @@
     }
 </script>
 
-// src/components/ContactForm.svelte
 <form on:submit={handleSubmit}>
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
