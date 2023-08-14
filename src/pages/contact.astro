@@ -34,10 +34,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </article>
         -->
         <article>
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" rows="4" required></textarea>
+          <form class="contact-form" name="contact-form" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact-form" />
+            <!-- Rest of your form fields -->
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
             <button type="submit">Send Message</button>
           </form>
           <br />
