@@ -1,5 +1,10 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css');
+
+/* Color Definitions */
 :root {
-  /* define colors */
   --background: #080113;
   --background-alt: #0b001c;
   --primary: #271874;
@@ -13,7 +18,10 @@
   --text-alt: #10001c;
   --error: #ff004c;
   --code: #0088ff;
-  /* define fonts */
+}
+
+/* Fonts */
+:root {
   --font-menu: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
   --font: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
   --font-alt: system-ui;
@@ -21,8 +29,7 @@
   --font-code: 'Terminus', 'hack-subset', 'monospace';
 }
 
-/* Additional styles */
-
+/* Additional Styles */
 #theme-toggle-label {
   background-color: var(--toggle-label-background);
   border-radius: 50px;
@@ -42,13 +49,45 @@
 /* Body */
 body {
   background-color: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+  margin: auto;
+  padding: 1rem;
+  max-width: 65ch;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Inputs */
+textarea,
+input {
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 1rem;
+}
+
+/* Banner */
+.div-banner {
+  height: 60px;
+  width: 100%;
 }
 
 /* Code */
 code {
-  align-content: justify;
   font-family: var(--font-code);
-  text-align: center;
   font-size: 75%;
   white-space: pre-wrap;
   padding: 0.3rem;
@@ -58,23 +97,16 @@ code {
   border-radius: 1rem;
 }
 
-pre>code {
+pre code {
   font-family: 'Terminus', 'Hack', monospace;
   padding: 2rem 2rem;
   white-space: pre;
 }
 
+/* General Styles */
 * {
   margin: auto;
   box-sizing: border-box;
-}
-
-body {
-  overflow-y: scroll;
-  font-family: var(--font);
-  color: var(--text);
-  background-color: var(--background);
-  line-height: 1.5;
 }
 
 h1,
@@ -91,7 +123,7 @@ h6 {
 }
 
 p {
-  font: var(--font);
+  font-family: var(--font);
   text-align: center;
   line-height: 1.26rem;
   text-shadow: 0.03rem 0.003rem 0.2rem var(--secondary);
@@ -106,6 +138,7 @@ hr {
   margin-bottom: 20px;
 }
 
+/* Floats */
 .right {
   float: right;
 }
@@ -122,19 +155,18 @@ hr {
   padding-right: 0.9rem;
 }
 
+/* Scrollbar */
 .scrollbar {
   overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .scrollbar::-webkit-scrollbar {
   display: none;
 }
 
-.scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
+/* Borders */
 .border {
   border-radius: 3.14rem;
   border: 0.096rem solid var(--secondary);
@@ -145,6 +177,7 @@ hr {
   border-radius: 7rem;
 }
 
+/* Logo */
 .logo-img {
   position: fixed;
   width: 100%;
@@ -154,6 +187,7 @@ hr {
   right: 0px;
 }
 
+/* Header */
 .header h1 {
   position: fixed;
   font-family: var(--font-h1);
@@ -172,6 +206,7 @@ header img {
   height: 60px;
 }
 
+/* Navigation */
 .nav {
   position: fixed;
   margin: 0 auto;
@@ -257,11 +292,12 @@ header img {
   outline-style: solid;
 }
 
+/* Sections */
 section {
   margin-top: 9rem;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  font: var(--font);
+  font-family: var(--font);
   justify-items: center;
   justify-content: space-between;
   width: 100%;
@@ -315,6 +351,7 @@ section a:active {
   outline-style: solid;
 }
 
+/* Footer */
 footer {
   background-color: var(--background);
   position: fixed;
@@ -355,6 +392,7 @@ time {
   padding-left: 7%;
 }
 
+/* Code Blocks */
 code {
   padding: 2px 5px;
   background-color: #f2f2f2;
@@ -364,10 +402,11 @@ pre {
   padding: 1rem;
 }
 
-pre>code {
+pre code {
   all: unset;
 }
 
+/* Blockquote */
 blockquote {
   border: 1px solid #999;
   color: #222;
@@ -376,10 +415,12 @@ blockquote {
   font-style: italic;
 }
 
+/* Tables */
 table {
   width: 100%;
 }
 
+/* Images */
 img {
   max-width: 100%;
   height: auto;
@@ -387,6 +428,7 @@ img {
   border-radius: 1rem;
 }
 
+/* Div Image */
 .div-image {
   position: relative;
   height: 60px;

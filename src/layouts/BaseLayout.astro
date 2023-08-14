@@ -1,0 +1,28 @@
+---
+// src/layouts/BaseLayout.astro
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const { title, description, image = "/favicon.svg" } = Astro.props;
+---
+
+<html>
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <noscript>
+      <div class="alert alert-with-icon alert-error no-js-alert" data-nosnippet="true">
+        <i class="icon alert-icon icon-alert-alt"></i>
+        <p>
+          Parts of the MagicPuddle website will not work properly without JavaScript.
+          Please enable and click <a href="index">here</a>
+        </p>
+      </div>
+    </noscript>
+    <Footer />
+  </body>
+</html>
