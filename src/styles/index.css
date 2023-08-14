@@ -5,17 +5,24 @@
 
 /* Color Definitions */
 :root {
+  /* Primary Colors */
   --background: #080113;
   --background-alt: #0b001c;
   --primary: #271874;
-  --primary-alt: #342771;
+  --primary-alt: #342771; /* Keeping the same color */
+  
+  /* Secondary Colors */
   --secondary: #05f4c5;
   --secondary-alt: #359683;
   --compliment: #0088ff;
   --compliment-alt: #ff00d4;
+  
+  /* Text Colors */
   --text: #e5dafa;
   --text-primary: #05f4c5;
   --text-alt: #10001c;
+  
+  /* Error and Code Colors */
   --error: #ff004c;
   --code: #0088ff;
 }
@@ -433,4 +440,111 @@ img {
   position: relative;
   height: 60px;
   width: 100%;
+}
+
+/* Contact Section Styles */
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: var(--text-primary); /* Use primary text color */
+}
+
+.contact-form {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  /* Adjust input and textarea styles as needed */
+  background-color: var(--background-alt);
+  color: var(--text);
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact-form button {
+  background-color: var(--secondary); /* Use secondary color */
+  color: var(--text);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary-alt); /* Use secondary alternate color */
+}
+
+/* Media Queries */
+@media (max-width: 640px) {
+  /* Your existing styles for smaller screens */
+}
+
+@media (min-width: 640px) {
+  /* Your existing styles for larger screens */
+}
+
+form,
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid var(--secondary);
+  background: var(--background);
+  border-radius: 40px 40px 40px 40px;
+}
+
+.input-group {
+  margin: 10px 0;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+
+.input-group input {
+  height: 30px;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 16px;
+  color: var(--text-alt);
+  background: var(--secondary);
+  border: none;
+  border-radius: 20px;
+}
+
+.error {
+  width: 92%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
 }

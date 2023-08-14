@@ -7,47 +7,65 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 <!DOCTYPE html>
 <html lang="en">
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <body>
-        <Header />
-        <section class="corner-round border">
-            <img class="div-banner" src="/banner.png" />
-            <div id="about">
-                <h2>
-                    <i class="fa fa-tv"></i> Products <i
-                        class="fa-regular fa-server"></i>
-                </h2>
-                <article>
-                <p>
-                    At MagicPuddle, we offer a wide range of customized
-                    computing solutions. Whether you're in need of brand new,
-                    gently used, or professionally refurbished computers,
-                    devices, or parts, we've got you covered. Our dedicated team
-                    is committed to delivering high-quality products that meet
-                    your specific requirements, ensuring you have the perfect
-                    computing solution tailored to your needs.
-                </p>
-            </article>
-            <br />
-            </div>
-        </section>
-        <Footer />
-        <style>
-            @media (max-width: 640px) {
-                .div-banner {
-                    max-width: 100%;
-                }
-            }
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <body>
+    <Header />
+    <section class="corner-round border">
+      <img class="div-banner" src="/banner.png" />
+      <div id="products">
+        <h2 class="section-heading">Explore Our Innovative Products</h2>
+        <br />
+        <article class="products-description">
+          <p>
+            Welcome to MagicPuddle's realm of technology solutions. Our diverse
+            catalog features an array of meticulously crafted products that
+            redefine computing excellence.
+          </p>
+        </article>
+        <br />
+        <article class="products-description">
+          <p>
+            Whether you're seeking cutting-edge brand new devices, eco-friendly
+            gently used options, or premium refurbished gems, our collection is
+            a testament to quality and innovation.
+          </p>
+        </article>
+        <br />
+        <article class="products-description">
+          <p>
+            Our dedicated team of experts ensures that each product meets the
+            highest standards, ensuring seamless performance and tailored
+            functionality. Your satisfaction is our commitment.
+          </p>
+        </article>
+        <br />
+        <article class="products-description">
+          <p>
+            Step into the world of MagicPuddle's products, where technology
+            converges with your aspirations, creating possibilities beyond
+            imagination.
+          </p>
+        </article>
+        <br />
+      </div>
+    </section>
+    <Footer />
+    <style>
+      @media (max-width: 640px) {
+        .div-banner {
+          max-width: 100%;
+        }
+      }
 
-            @media (min-width: 640px) {
-                .div-banner {
-                    max-width: 100%;
-                }
-            }
+      @media (min-width: 640px) {
+        .div-banner {
+          max-width: 100%;
+        }
+      }
 
-            .corner-round {
-                border-radius: 7rem;
-            }
-        </style>
-    </body>
+      .corner-round {
+        border-radius: 7rem;
+      }
+    </style>
+  </body>
 </html>
