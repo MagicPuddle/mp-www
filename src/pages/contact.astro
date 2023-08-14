@@ -33,7 +33,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             <a href="mailto:MagicPuddle@pm.me">MagicPuddle@pm.me</a>
           </div>
         </article>
-        -->
+
         <article>
           <form data-netlify="true" name="contact" class="contact-form">
             <input type="hidden" name="form-name" value="contact" />
@@ -94,7 +94,23 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
             contactForm.addEventListener("submit", handleSubmit);
           </script>
-
+        -->
+        <form name="contact" netlify>
+          <p>
+            <label><input type="text" name="name" placeholder="name" /></label>
+          </p>
+          <p>
+            <label><input type="email" name="email" placeholder="email" /></label>
+          </p>
+          <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+              required></textarea>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
           <br />
         </article>
       </div>
