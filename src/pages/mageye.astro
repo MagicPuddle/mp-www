@@ -1,0 +1,128 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <body>
+    <Header />
+    <section class="corner-round border">
+      <img class="div-banner" src="/banner.png" />
+      <div id="about">
+        <h2>
+          <i class="fa fa-eye"></i> MagEye NVR Systems <i
+            class="fa-regular fa-eye"></i>
+        </h2>
+        <article>
+          <p>
+            At MagicPuddle, we are committed to transforming the way you
+            perceive security and surveillance. Enter the world of cutting-edge
+            technology with our revolutionary MagEye NVR Systems – a pinnacle of
+            innovation that sets new standards in the realm of surveillance
+            solutions.
+          </p>
+        </article>
+        <article>
+          <h2>Capture Clarity Beyond Limits</h2>
+          <p>
+            MagEye NVR Systems redefine visual acuity. With
+            ultra-high-definition cameras boasting resolutions that exceed
+            expectations, every detail is rendered in remarkable clarity.
+            Whether it's monitoring expansive outdoor areas or securing indoor
+            spaces, MagEye's advanced optics ensure that no intricacy escapes
+            your vigilance.
+          </p>
+        </article>
+        <article>
+          <h2>Seamless Integration, Effortless Operation</h2>
+          <p>
+            We understand the importance of an intuitive user experience. Our
+            MagEye NVR Systems seamlessly integrate into your existing security
+            infrastructure, enabling easy setup and configuration. Navigate
+            through the user-friendly interface to access real-time feeds,
+            review past recordings, and customize settings with unparalleled
+            ease.
+          </p>
+        </article>
+<!--        <article>
+          <h2>Advanced AI-Powered Intelligence</h2>
+          <p>
+            Elevate your surveillance to a new echelon with MagEye's AI-powered
+            intelligence. Experience proactive security as our systems identify
+            and alert you to unusual activities, ensuring timely response and
+            risk mitigation. The fusion of AI and surveillance empowers you to
+            stay one step ahead, even in the most dynamic environments.
+          </p>
+        </article> -->
+        <article>
+          <h2>Robust Security, Anytime, Anywhere</h2>
+          <p>
+            In an era where remote monitoring is paramount, MagEye NVR Systems
+            offer a seamless connection between you and your premises. Access
+            live feeds and recorded footage from any device, anywhere in the
+            world, ensuring you're always in control, whether you're at home, in
+            the office, or on the go.
+          </p>
+        </article>
+        <article>
+          <h2>Scalability Redefined</h2>
+          <p>
+            Adaptability is at the core of MagEye's design. Our NVR Systems
+            cater to a spectrum of needs – from single-camera setups to
+            comprehensive multi-camera installations. As your requirements
+            evolve, so can your surveillance infrastructure, thanks to the
+            effortless scalability of MagEye solutions.
+          </p>
+</article>
+<article>
+          <h2>Elegant Design, Robust Build</h2>
+          <p>
+            Crafted with both form and function in mind, MagEye systems exhibit
+            a sleek and modern design that seamlessly blends into diverse
+            environments. Built to withstand the elements, these systems stand
+            as steadfast sentinels, offering unwavering performance even in
+            challenging conditions.
+          </p>
+        </article>
+        <article>
+          <h2>Experience the Future of Surveillance</h2>
+          <p>
+            With MagicPuddle's MagEye NVR Systems, embrace a future where
+            security transcends conventional boundaries. Empower yourself with
+            advanced technology that not only safeguards but also transforms the
+            way you perceive your surroundings. Trust in innovation, trust in
+            MagEye. Your vision, our mission.
+          </p>
+        </article>
+        <article>
+          <p>
+            Upgrade your surveillance experience today. Discover MagEye NVR
+            Systems at their finest – only from MagicPuddle.
+          </p>
+        </article>
+      </div>
+      <Footer />
+      <style>
+        @media (max-width: 640px) {
+          .div-banner {
+            max-width: 100%;
+          }
+        }
+
+        @media (min-width: 640px) {
+          .div-banner {
+            max-width: 100%;
+          }
+        }
+
+        .corner-round {
+          border-radius: 7rem;
+        }
+      </style>
+    </section>
+  </body>
+</html>

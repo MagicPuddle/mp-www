@@ -23,6 +23,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "netlify": "^13.1.9"
+    "netlify": "^13.1.9",
+    "netlify-cli": "^15.9.0"
   }
 }
