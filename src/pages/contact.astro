@@ -121,7 +121,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   
       const formData = new FormData(this);
   
-      fetch("/thank-you/english.html") {
+      fetch("/thank-you/english.html", { // <-- Fix the syntax here
         method: "POST",
         body: formData,
       })
@@ -139,6 +139,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           console.error("Error:", error);
           alert("An error occurred. Please try again later.");
         });
-  </script>
-  
+    });
+  </script>  
 </html>
