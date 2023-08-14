@@ -9,19 +9,20 @@
   --background: #080113;
   --background-alt: #0b001c;
   --primary: #271874;
-  --primary-alt: #342771; /* Keeping the same color */
-  
+  --primary-alt: #342771;
+  /* Keeping the same color */
+
   /* Secondary Colors */
   --secondary: #05f4c5;
   --secondary-alt: #359683;
   --compliment: #0088ff;
   --compliment-alt: #ff00d4;
-  
+
   /* Text Colors */
   --text: #e5dafa;
   --text-primary: #05f4c5;
   --text-alt: #10001c;
-  
+
   /* Error and Code Colors */
   --error: #ff004c;
   --code: #0088ff;
@@ -448,7 +449,8 @@ img {
   align-items: center;
   gap: 1rem;
   font-size: 1.2rem;
-  color: var(--text-primary); /* Use primary text color */
+  color: var(--text-primary);
+  /* Use primary text color */
 }
 
 .contact-form {
@@ -470,7 +472,8 @@ img {
 }
 
 .contact-form button {
-  background-color: var(--secondary); /* Use secondary color */
+  background-color: var(--secondary);
+  /* Use secondary color */
   color: var(--text);
   border: none;
   border-radius: 5px;
@@ -481,7 +484,8 @@ img {
 }
 
 .contact-form button:hover {
-  background-color: var(--secondary-alt); /* Use secondary alternate color */
+  background-color: var(--secondary-alt);
+  /* Use secondary alternate color */
 }
 
 /* Media Queries */

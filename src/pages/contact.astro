@@ -34,60 +34,61 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </article>
         -->
         <article>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" rows="4" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        <br />
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <br />
+        </article>
       </div>
+
+      <Footer />
+      <style>
+        /* Styles for the modern contact section */
+        .contact-info {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 1.2rem;
+          color: var(--text-primary); /* Use primary text color */
+        }
+
+        .contact-form {
+          text-align: center;
+          margin-top: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+          background-color: var(--background-alt);
+          color: var(--text);
+          border: 1px solid var(--secondary);
+          border-radius: 5px;
+          padding: 1rem;
+          font-size: 1rem;
+          width: 100%;
+          margin: 0.5rem 0;
+        }
+
+        .contact-form button {
+          background-color: var(--secondary); /* Use secondary color */
+          color: var(--text);
+          border: none;
+          border-radius: 5px;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+          background-color: var(
+            --secondary-alt
+          ); /* Use secondary alternate color */
+        }
+      </style>
     </section>
-
-    <Footer />
-    <style>
-      /* Styles for the modern contact section */
-      .contact-info {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 1.2rem;
-        color: var(--text-primary); /* Use primary text color */
-      }
-
-      .contact-form {
-        text-align: center;
-        margin-top: 1rem;
-      }
-
-      .contact-form input,
-      .contact-form textarea {
-        background-color: var(--background-alt);
-        color: var(--text);
-        border: 1px solid var(--secondary);
-        border-radius: 5px;
-        padding: 1rem;
-        font-size: 1rem;
-        width: 100%;
-        margin: 0.5rem 0;
-      }
-
-      .contact-form button {
-        background-color: var(--secondary); /* Use secondary color */
-        color: var(--text);
-        border: none;
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-
-      .contact-form button:hover {
-        background-color: var(
-          --secondary-alt
-        ); /* Use secondary alternate color */
-      }
-    </style>
   </body>
 </html>
