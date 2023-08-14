@@ -26,107 +26,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           </p>
         </article>
         <br />
-        <!--  
-        <article class="contact-details">
-          <div class="contact-info">
-            <i class="fa fa-envelope"></i>
-            <a href="mailto:MagicPuddle@pm.me">MagicPuddle@pm.me</a>
-          </div>
-        </article>
-
-        <article>
-          <form data-netlify="true" name="contact" class="contact-form">
-            <input type="hidden" name="form-name" value="contact" />
-
-            <label for="name"></label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required
-            />
-
-            <label for="email"></label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-
+        <form class="contact-form" name="contact" data-netlify="true" netlify>
+          <p>
+            <label><input type="text" name="name" placeholder="Name" required /></label>
+          </p>
+          <p>
+            <label><input type="email" name="email" placeholder="Email" required /></label>
+          </p>
+          <p>
             <textarea
               name="message"
               placeholder="Your Message"
               rows="4"
               required></textarea>
-
+          </p>
+          <p>
             <button type="submit">Send Message</button>
-          </form>
-
-          <script>
-            const contactForm = document.querySelector(".contact-form");
-
-            const handleSubmit = async (event) => {
-              event.preventDefault();
-              const formData = new FormData(contactForm);
-
-              try {
-                const response = await fetch("/", {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                  },
-                  body: new URLSearchParams(formData).toString(),
-                });
-
-                if (response.ok) {
-                  alert("Thank you for your submission");
-                  contactForm.reset();
-                } else {
-                  throw new Error("Submission failed");
-                }
-              } catch (error) {
-                alert(error.message);
-              }
-            };
-
-            contactForm.addEventListener("submit", handleSubmit);
-          </script>
-        -->
-        <form name="contact" netlify>
-          <p>
-            <label><input type="text" name="name" placeholder="name" /></label>
-          </p>
-          <p>
-            <label><input type="email" name="email" placeholder="email" /></label>
-          </p>
-          <textarea
-              name="message"
-              placeholder="Your Message"
-              rows="4"
-              required></textarea>
-          <p>
-            <button type="submit">Send</button>
           </p>
         </form>
-          <br />
-        </article>
+        <br />
       </div>
 
       <Footer />
 
       <style>
         /* Styles for the modern contact section */
-        .contact-info {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          font-size: 1.2rem;
-          color: var(--text-primary); /* Use primary text color */
-        }
-
         .contact-form {
           text-align: center;
           margin-top: 1rem;
