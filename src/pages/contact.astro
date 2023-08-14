@@ -36,37 +36,51 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         -->
         <article>
           <form data-netlify="true" name="contact" class="contact-form">
-            <input type="hidden" name="form-name" value="contact">
-            
+            <input type="hidden" name="form-name" value="contact" />
+
             <label for="name"></label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
-          
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+
             <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-          
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
             <textarea
               name="message"
               placeholder="Your Message"
               rows="4"
               required></textarea>
-          
+
             <button type="submit">Send Message</button>
           </form>
-          
+
           <script>
             const contactForm = document.querySelector(".contact-form");
-          
+
             const handleSubmit = async (event) => {
               event.preventDefault();
               const formData = new FormData(contactForm);
-          
+
               try {
                 const response = await fetch("/", {
                   method: "POST",
-                  headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                  headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                  },
                   body: new URLSearchParams(formData).toString(),
                 });
-          
+
                 if (response.ok) {
                   alert("Thank you for your submission");
                   contactForm.reset();
@@ -77,10 +91,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 alert(error.message);
               }
             };
-          
+
             contactForm.addEventListener("submit", handleSubmit);
           </script>
-          
+
           <br />
         </article>
       </div>

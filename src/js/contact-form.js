@@ -1,21 +1,25 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const app = express();
-const port = process.env.PORT || 3000;
+const contactForm = document.querySelector(".contact-form");
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(contactForm);
 
-app.post("/path-to-your-server-endpoint", (req, res) => {
-    // Process the form data and send emails
-    // Return a response indicating success or failure
-    const { name, email, message } = req.body;
-    // Process and send emails here
-    const success = true; // or false based on your processing
+    try {
+        const response = await fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        });
 
-    res.json({ success });
-});
+        if (response.ok) {
+            alert("Thank you for your submission");
+            contactForm.reset();
+        } else {
+            throw new Error("Submission failed");
+        }
+    } catch (error) {
+        alert(error.message);
+    }
+};
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+contactForm.addEventListener("submit", handleSubmit);
