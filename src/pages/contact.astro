@@ -35,27 +35,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </article>
         -->
         <article>
-          <form netlify
-            class="contact-form"
-            name="contact-form"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="form-name" value="contact-form" />
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <input
-              type="text"
-              name="company_name"
-              placeholder="Conpany Name"
-              id="company_name"
-            />
+          <form netlify class="contact-form">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+          
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <!-- Add other form fields here -->
             <textarea
               name="message"
               placeholder="Your Message"
@@ -115,30 +101,4 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       </style>
     </section>
   </body>
-  <script>
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-      event.preventDefault();
-  
-      const formData = new FormData(this);
-  
-      fetch("/thank-you/english.html", { // <-- Fix the syntax here
-        method: "POST",
-        body: formData,
-      })
-        .then(response => response.json())
-        .then(data => {
-          // Handle the response data (success message, error message, etc.)
-          console.log(data);
-          if (data.success) {
-            alert("Message sent successfully!");
-          } else {
-            alert("Message could not be sent. Please try again.");
-          }
-        })
-        .catch(error => {
-          console.error("Error:", error);
-          alert("An error occurred. Please try again later.");
-        });
-    });
-  </script>  
 </html>
