@@ -28,7 +28,7 @@
     }
 </script>
 
-<form on:submit={handleSubmit}>
+<form class="contact-form" on:submit={handleSubmit} >
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
     <textarea name="message" placeholder="Your Message" required />
