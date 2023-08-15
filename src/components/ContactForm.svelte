@@ -34,5 +34,5 @@
     <textarea name="message" placeholder="Your Message" required />
     <button type="submit">Submit</button>
 </form>
-
 <p>{formStatus}</p>
+

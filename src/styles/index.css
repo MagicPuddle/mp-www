@@ -529,7 +529,7 @@ form,
 .btn {
   padding: 10px;
   font-size: 16px;
-  color: var(--text-alt);
+  color: var(--text);
   background: var(--secondary);
   border: none;
   border-radius: 20px;

@@ -1,0 +1,47 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <body>
+    <Header />
+    <section class="corner-round border">
+      <img class="div-banner" src="/banner.png" />
+      <div id="products">
+        <h2 class="section-heading">Jump in the MagicPuddle</h2>
+        <br />
+        <article class="products-description">
+          <form class="contact-form">
+            <label>
+              <input
+                type="text"
+                name="username"
+                placeholder="User Name"
+                required
+              />
+            </label>
+            <label>
+              <input type="email" name="email" placeholder="Email" required />
+            </label>
+            <label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+                minlength="16"
+              />
+            </label>
+            <button>Next</button>
+          </form>
+        </article>
+      </div>
+    </section></body
+  >
+</html>

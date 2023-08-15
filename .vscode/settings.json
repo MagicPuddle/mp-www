@@ -1,5 +1,12 @@
 {
     "cSpell.words": [
         "astro"
-    ]
+    ],
+    "frontMatter.content.pageFolders": [
+        {
+            "title": "blog",
+            "path": "[[workspace]]/src/content/blog"
+        }
+    ],
+    "frontMatter.taxonomy.categories": []
 }

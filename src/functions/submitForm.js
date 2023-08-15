@@ -11,7 +11,7 @@ exports.handler = async function (event) {
     try {
         await transporter.sendMail({
             from: email,
-            to: 'MagicPuddle@pm.me',
+            to: 'magicpuddle@pm.me',
             subject: 'New Contact Form Submission',
             text: `${name} sent a message: ${message}`,
         });
