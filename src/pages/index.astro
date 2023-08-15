@@ -1,16 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
-<BaseLayout />
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} />
 <!-- <LatestBlogPosts /> -->
 <section class="corner-round border">
   <img class="div-banner" src="/banner.png" alt="Banner" />
   <div>
     <h2 class="section-heading">
-      <!--     <i class="fa-regular fa-hat-wizard">-->
       Empowering Possibilities with Technology
-      <!--       <i class="fa-solid fa-magic"></i>-->
     </h2>
     <br />
     <article class="company-description">
