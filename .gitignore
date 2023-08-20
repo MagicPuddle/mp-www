@@ -20,5 +20,9 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# VScode
+.vscode
+
 # Local Netlify folder
 .netlify
+

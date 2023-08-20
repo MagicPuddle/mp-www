@@ -1,9 +1,8 @@
 ---
 title: First Post
 description: First Post
-pubDate: 2023-08-20T02:21:12.442Z
-draft: no
-slug: required
+pubDate: 'Jul 02 2022'
+heroImage: '/logo.svg'
 ---
 
 <p align="center">
