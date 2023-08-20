@@ -15,5 +15,5 @@
     [headers.values]
     Access-Control-Allow-Origin = "*"
 
-  [functions]
-    external_node_modules = ["astro"]
+[functions]
+  external_node_modules = ["astro"]

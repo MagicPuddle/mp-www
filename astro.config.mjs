@@ -11,7 +11,7 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
   site: 'https://magicpuddle.netlify.app',
   integrations: [mdx(), sitemap(), react(), svelte()],
-  output: "server",
+  output: "dist",
   adapter: netlify({
     builders: true
   })
