@@ -34,14 +34,8 @@ Behind every successful technology service is a team of skilled professionals. O
 
 Visit our official website: [MagicPuddle](https://magicpuddle.netlify.app/)
 
-Stay updated with the latest tech insights and news by following us on social media:
-
-- [Twitter](https://twitter.com/MagicPuddleTech)
-- [LinkedIn](https://www.linkedin.com/company/magicpuddletech)
-- [Instagram](https://www.instagram.com/magicpuddletech)
-
 ## :email: Contact Us
 
-Got questions or inquiries? Reach out to us at <contact@magicpuddle.net>.
+Got questions or inquiries? Reach out to us at <MagicPuddle@pm.me>.
 
 We're thrilled to embark on this technology-driven journey with you! :rocket:
