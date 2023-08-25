@@ -1,19 +1,22 @@
 [build]
-  command = "astro build"
-  publish = "dist"
+command = "npm run astro ßbuild"
+publish = "dist"
+
+[dev]
+command = "npm run astro dev"
 
 [build.environment]
-  NODE_VERSION = "20"
+NODE_VERSION = "20"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/*"
+to = "/index.html"
+status = 200
 
 [[headers]]
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
+for = "/*"
+[headers.values]
+Access-Control-Allow-Origin = "*"
 
 [functions]
-  external_node_modules = ["astro"]
+external_node_modules = ["astro"]

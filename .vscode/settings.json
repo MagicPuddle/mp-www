@@ -8,7 +8,6 @@
             "path": "[[workspace]]/src/content/blog"
         }
     ],
-    "frontMatter.taxonomy.categories": [],
     "[markdown]": {
     }
 }
