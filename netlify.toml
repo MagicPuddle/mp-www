@@ -1,12 +1,12 @@
 [build]
-command = "npm run astro ßbuild"
+command = "npm run astro build"
 publish = "dist"
-
-[dev]
-command = "npm run astro dev"
 
 [build.environment]
 NODE_VERSION = "20"
+
+[[dev]]
+command = "astro dev"
 
 [[redirects]]
 from = "/*"

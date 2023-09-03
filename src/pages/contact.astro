@@ -1,45 +1,32 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
 import ContactForm from "../components/ContactForm.svelte";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  <body>
-    <Header />
-    <section class="corner-round border">
-      <img class="div-banner" src="/banner.png" />
-      <div id="contact">
-        <h2 class="section-heading">IT Phone Home</h2>
-        <br />
-        <article class="contact-description">
-          <p>
-            We're here to assist you. Reach out to us for any inquiries or
-            information. Our dedicated team is ready to provide the support you
-            need.
-          </p>
-        </article>
-        <article>
-          <!-- 
-          <div class="contact">
-            <a href="mailto:MagicPuddle@pm.me"><i class="fa fa-envelope"></i></a>
-            <a href="SMS:000-000-0000"><i class="fa fa-sms"></i></a>
-            <a href="tel:000-000-0000"><i class="fa fa-phone"></i></a>
-          </div>
-      -->
-        </article>
-        <br />
-        <article>
-          <ContactForm />
-        </article>
-        <br />
-      </div>
-      <Footer />
-      <style></style>
-    </section>
-  </body>
-</html>
+<BaseLayout />
+<Section>
+  <div id="contact">
+    <h2 class="section-heading">IT Phone Home</h2>
+    <article class="contact-description">
+      <br />
+      <p>
+        We're here to assist you. Reach out to us for any inquiries or
+        information. Our dedicated team is ready to provide the support you
+        need.
+      </p>
+    </article>
+    <article>
+      <ContactForm />
+    </article>
+    <br />
+  <article>
+    <div class="onclick-contact">
+      <a href="mailto:MagicPuddle@pm.me"><i class="fa fa-envelope"></i></a>
+      <a href="SMS:000-000-0000"><i class="fa fa-sms"></i></a>
+      <a href="tel:000-000-0000"><i class="fa fa-phone"></i></a>
+    </div>
+  </article>
+</div>
+  <style></style>
+</Section>

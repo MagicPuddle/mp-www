@@ -17,22 +17,22 @@
     --text-alt: #10001c;
     
     --error: #ff004c;
-    --code: #0088ff;
+    --code: #7700ff;
 
     /* define fonts */
     --font-menu: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
     --font: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
     --font-alt: system-ui;
-    --font-h1: 'Fugaz One','Font Awesome 6 Brands', 'Font Awesome 6 Free', 'hack-subset', cursive;
+    --font-h1: 'Fugaz One','Font Awesome 6 Brands', 'Font Awesome 6 Free', 'hack-subset';
     --font-code: 'Terminus', 'hack-subset', 'monospace';
 }
 
 body { 
-    background-color: var(--background);
+    background-color: var(--background-alt);
 }
 
 section{
-    background-color: var(--background-alt);
+    background-color: var(--background);
 }
 
 .border {

@@ -30,10 +30,10 @@
 
 /* Fonts */
 :root {
-  --font-menu: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
-  --font: -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+  --font-menu: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif, 'Font Awesome 6 Brands', 'Font Awesome 6 Free';
+  --font: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif, 'Font Awesome 6 Brands', 'Font Awesome 6 Free';
   --font-alt: system-ui;
-  --font-h1: 'Fugaz One', 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'hack-subset', cursive;
+  --font-h1: 'Fugaz One', 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'hack-subset';
   --font-code: 'Terminus', 'hack-subset', 'monospace';
 }
 
@@ -453,28 +453,32 @@ img {
   /* Use primary text color */
 }
 
-.contact-form {
+.contact-form, .registration-form {
   text-align: center;
   margin-top: 2rem;
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.registration-form input,
+.registration-form textarea {
   /* Adjust input and textarea styles as needed */
   background-color: var(--background-alt);
   color: var(--text);
   border: 1px solid var(--secondary);
-  border-radius: 5px;
-  padding: 1rem;
+  border-radius: 42px;
+  padding: 0.6rem;
   font-size: 1rem;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
-.contact-form button {
+.contact-form button,
+.registration-form button,
+.sso-login button {
   background-color: var(--secondary);
   /* Use secondary color */
-  color: var(--text);
+  color: var(--text-alt);
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
@@ -483,8 +487,10 @@ img {
   transition: background-color 0.3s;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.registration-form button:hover {
   background-color: var(--secondary-alt);
+  color: var(--text);
   /* Use secondary alternate color */
 }
 
@@ -502,13 +508,14 @@ form,
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid var(--secondary);
+  border: none;
   background: var(--background);
   border-radius: 40px 40px 40px 40px;
 }
 
 .input-group {
   margin: 10px 0;
+  border-radius: 40px 40px 40px 40px;
 }
 
 .input-group label {
@@ -529,7 +536,7 @@ form,
 .btn {
   padding: 10px;
   font-size: 16px;
-  color: var(--text);
+  color: var(--text-alt);
   background: var(--secondary);
   border: none;
   border-radius: 20px;
@@ -551,4 +558,9 @@ form,
   background: #dff0d8;
   border: 1px solid #3c763d;
   margin-bottom: 20px;
+}
+
+.onclick-contact {
+  display: inline-flex;
+  align-content: center;
 }

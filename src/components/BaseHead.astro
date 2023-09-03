@@ -23,23 +23,22 @@ export interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
 const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 ---
 
-<!-- Primary Metadata -->
+<!-- Base Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 
-<!-- Canonical URL -->
-<link rel="canonical" href={canonicalURL} />
-
-<!-- Primary Meta Tags -->
+<!-- Title & Description Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -55,36 +54,10 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
-<!-- *** MagiPuddle *** -->
 <!-- Fonts -->
-<link
-  href="https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap"
-  rel="stylesheet"
-/>
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css"
   integrity="sha512-XgCw4Srl8lC1ECwcaHwAU0WnxQwHkqmInzg9wJLtGB7DRuMaXPuK2k9WJ2AwRDGdrgK9eJpZl2hUlLi2WQssmw=="
   crossorigin="anonymous"
 />
-
-<!-- Font Awesome -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-
-<noscript>
-  <div
-    class="alert alert-with-icon alert-error no-js-alert"
-    data-nosnippet="true">
-    <i class="icon alert-icon icon-alert-alt"></i>
-    <p>
-      Parts of the MagicPuddle website will not work properly without
-      JavaScript. Please enable and click <a href="index">here</a>
-    </p>
-  </div>
-</noscript>

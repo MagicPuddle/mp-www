@@ -1,0 +1,49 @@
+<script>
+  let username = "";
+  let email = "";
+  let password = "";
+  let confirmPassword = "";
+
+  function handleSubmit() {
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
+
+    // Perform registration logic here, e.g., send data to your server
+    const userData = { username, email, password };
+    console.log("User Data:", userData);
+
+    // Clear form fields after submission
+    username = "";
+    email = "";
+    password = "";
+    confirmPassword = "";
+  }
+</script>
+
+
+  <form on:submit={handleSubmit} class="registration-form">
+    <h3>Registration Form</h3>
+    <label for="username"></label>
+    <input type="text" id="username" placeholder="User Name"
+    bind:value={username} required />
+
+    <label for="email"></label>
+    <input type="email" id="email" placeholder="Email"
+    bind:value={email} required />
+
+    <label for="password"></label>
+    <input type="password" id="password" placeholder="Password"
+    bind:value={password} required />
+
+    <label for="confirm_password"></label>
+    <input
+      type="password"
+      id="confirm_password"
+      placeholder="Confirm Password"
+      bind:value={confirmPassword}
+      required
+    />
+    <button type="submit">Submit</button>
+  </form>
