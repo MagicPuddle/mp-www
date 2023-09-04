@@ -29,7 +29,7 @@
 </script>
 
 <form class="contact-form" on:submit={handleSubmit}>
-  <h2>Email Contact Form</h2>
+  <h2>Contact Form</h2>
   <input type="text" name="name" placeholder="Name" required />
   <input type="email" name="email" placeholder="Email" required />
   <textarea name="message" placeholder="Message" required />
