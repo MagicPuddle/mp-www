@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { SITE_TITLE } from '../consts';
+import { image } from 'astro:content';
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -17,9 +19,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav id="nav-menu" className="navbar nav">
       <div className="navbar-brand">
-        <a href="/">Logo</a>
+        <a href="/">{ SITE_TITLE }</a>
       </div>
       <button className="navbar-toggle" onClick={handleMenuToggle}>
         Menu

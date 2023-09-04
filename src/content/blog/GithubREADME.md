@@ -1,5 +1,5 @@
 ---
-title: First Post
+title: MagicPuddle GitHub README
 description: First Post
 pubDate: 'Jul 02 2022'
 heroImage: '/logo.svg'

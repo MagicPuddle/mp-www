@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'MagicPuddle';
 export const SITE_DESCRIPTION = 'Create Destroy Rebuild';
+export const LOGO = 'logo.svg';
