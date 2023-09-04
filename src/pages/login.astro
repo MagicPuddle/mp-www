@@ -1,9 +1,15 @@
 ---
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Login from "../components/Login.svelte";
+import Section from "../components/Section.astro";
 ---
 
-<BaseLayout />
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} />
+<Section>
+<h2>Login</h2>
+<br />
+<p>Please login to your account for our products, services and work request information.</p>
 <Login />
-</div>
+</Section>
 

@@ -4,10 +4,6 @@ import { SITE_TITLE } from "../consts";
 ---
 
 <header class="header">
-	<logo class="logo" id="logo">
-		<img class="logo-img" src="/logo.svg" />
-		<h1>{SITE_TITLE}</h1>
-	</logo>
 	<nav class="nav" id="nav-menu">
 		<HeaderLink href="/"><i class="fa fa-igloo"></i></HeaderLink>
 		<HeaderLink href="/news"><i class="fa-regular fa-newspaper"></i></HeaderLink>
@@ -18,8 +14,9 @@ import { SITE_TITLE } from "../consts";
 		-->
 		<HeaderLink href="/about"><i class="fa-regular fa-address-card"></i></HeaderLink>
 		<HeaderLink href="/contact"><i class="fa-regular fa-comments"></i></HeaderLink>
+	</nav>
+	<nav id="nav-menu" class="nav nav-right">
 		<HeaderLink href="/login"><i class="fa-regular fa-user"></i></HeaderLink>
-		<!-- <HeaderLink href="#"><i class="fa-regular fa-user"></i></HeaderLink> -->
 	</nav>
 </header>
 

@@ -1,58 +1,47 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  <body>
-    <Header />
-    <section class="corner-round border">
-      <img class="div-banner" src="/banner.png" />
-      <div id="about">
-        <h2 class="section-heading">
-          <i class="fa fa-hat-wizard"></i> Our Mission <i
-            class="fa-solid fa-magic"></i>
-          </h2>
-          <br />
-        <article class="about-description">
-          <p>
-            At MagicPuddle, our mission is simple yet powerful: to provide
-            high-quality IT and electronics services that not only meet our
-            clients' needs but also exceed their expectations.
-          </p>
-        </article>
-        <br />
-        <article>
-          <p>
-            We are firm believers in the value of customer satisfaction. This
-            belief drives us to deliver cost-effective solutions that are
-            thoughtfully tailored to each client's unique requirements.
-          </p>
-        </article>
-        <br />
-        <article>
-          <p>
-            Our commitment is to ensure the smooth operation of our clients'
-            businesses. We achieve this through reliable, efficient services,
-            all while upholding our dedication to quality and innovation.
-          </p>
-        </article>
-        <br />
-        <article>
-          <p>
-            Join us in our journey as we use technology to create seamless
-            solutions, turning challenges into stepping stones towards your
-            success.
-          </p>
-        </article>
-        <br />
-      </div>
-    </section>
-    <Footer />
-    <style></style>
-  </body>
-</html>
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} />
+<Section>
+  <div id="about">
+    <h2 class="section-heading">
+      <i class="fa fa-hat-wizard"></i> Our Mission <i class="fa-solid fa-magic"
+      ></i>
+    </h2>
+    <br />
+    <article class="about-description">
+      <p>
+        At MagicPuddle, our mission is simple yet powerful: to provide
+        high-quality IT and electronics services that not only meet our clients'
+        needs but also exceed their expectations.
+      </p>
+    </article>
+    <br />
+    <article>
+      <p>
+        We are firm believers in the value of customer satisfaction. This belief
+        drives us to deliver cost-effective solutions that are thoughtfully
+        tailored to each client's unique requirements.
+      </p>
+    </article>
+    <br />
+    <article>
+      <p>
+        Our commitment is to ensure the smooth operation of our clients'
+        businesses. We achieve this through reliable, efficient services, all
+        while upholding our dedication to quality and innovation.
+      </p>
+    </article>
+    <br />
+    <article>
+      <p>
+        Join us in our journey as we use technology to create seamless
+        solutions, turning challenges into stepping stones towards your success.
+      </p>
+    </article>
+    <br />
+  </div>
+</Section>

@@ -1,8 +1,7 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts"
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Section from "../../components/Section.astro";
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
@@ -11,10 +10,7 @@ const posts = (await getCollection('news')).sort(
 );
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}  />
 		<style>
 			ul {
 				list-style-type: none;
@@ -32,13 +28,8 @@ const posts = (await getCollection('news')).sort(
 				color: #8e32dc;
 			}
 		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section class="corner-round border">
-				<img class="div-banner" src="../banner.png">
-				<div>
+			<Section>
+				<div id="latest">
 					<h2>Latest</h2>
 				<br />
 				<ul>
@@ -53,8 +44,4 @@ const posts = (await getCollection('news')).sort(
 				</ul>
 				</div>
 				<br />
-			</section>
-		</main>
-		<Footer />
-	</body>
-</html>
+			</Section>

@@ -1,10 +1,11 @@
 ---
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts"
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Section from "../components/Section.astro";
 import ContactForm from "../components/ContactForm.svelte";
 ---
 
-<BaseLayout />
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} />
 <Section>
   <div id="contact">
     <h2 class="section-heading">Connect With Us</h2>

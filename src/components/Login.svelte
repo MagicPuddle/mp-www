@@ -18,14 +18,11 @@
   }
 </script>
 
-<br />
-
 <div id="login" class="login">
   {#if error}
     <p style="color: red;">{error}</p>
   {/if}
   <form on:submit={handleSubmit} class="login">
-    <h1>Login</h1>
     <label for="username" />
     <input
       type="text"
@@ -34,8 +31,6 @@
       bind:value={username}
       required
     />
-    <br />
-
     <label for="password" />
     <input
       type="password"
@@ -44,43 +39,18 @@
       bind:value={password}
       required
     />
-    <br />
-
     <button type="submit">Login</button>
   </form>
+  <p>Create an account? <a href="register">Sign Up</a></p>
+  <p>Forgot password? <a href="reset-passwd">Reset It</a></p>
 </div>
-<br />
 
 <!--
-<h2 class="login">Login with a Giant</h2>
-<button onclick="loginWithGitHub()"><i class="fa fa-github"></i></button>
-<button onclick="loginWithApple()"><i class="fa fa-apple"></i></button>
-<button onclick="loginWithGoogle()"><i class="fa fa-google"></i></button>
+<h2 class="login">SSO Login</h2>
+<button class="onclick" onclick="loginWithGitHub()"><i class="fa-regular fa-github"></i></button>
+<button class="onclick" onclick="loginWithApple()"><i class="fa-regular fa-apple"></i></button>
+<button class="onclick" onclick="loginWithGoogle()"><i class="fa-regular fa-google"></i></button>
 -->
-
 <style>
-  label {
-    display: block;
-    margin-bottom: 3px;
-  }
 
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-  }
-
-  button {
-    padding: 10px 20px;
-    background-color: var(--primary);
-    color: var(--text);
-    border: none;
-    cursor: pointer;
-    border-radius: 2rem;
-  }
-
-  button:hover {
-    background-color: var(--secondary);
-    color: var(--text-alt);
-  }
 </style>

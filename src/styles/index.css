@@ -242,6 +242,12 @@ header img {
   box-shadow: 0 0 0.4rem 0 var(--secondary);
 }
 
+.nav-right {
+  left: 0px;
+  right: -1275px;
+  top: 10px;
+}
+
 #nav-menu {
   position: fixed;
   border-width: 2px;
@@ -250,9 +256,7 @@ header img {
   background-color: var(--background-alt);
   border-radius: 3.14rem;
   margin: 0 auto;
-  left: 0px;
-  right: 0px;
-  top: 90px;
+  top: 60px;
   padding: 4px;
   width: fit-content;
   z-index: 999;
@@ -439,7 +443,7 @@ img {
 }
 
 #login {
-  margin-top: 9rem;
+  margin-top: 1rem;
 }
 
 /* Contact Section Styles */
@@ -447,7 +451,7 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--text-primary);
   /* Use primary text color */
 }
@@ -455,7 +459,7 @@ img {
 .contact-form,
 .registration-form {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .login input,
@@ -482,7 +486,7 @@ img {
   background-color: var(--primary);
   color: var(--text);
   border: none;
-  border-radius: 5px;
+  border-radius: 42px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   cursor: pointer;
@@ -514,12 +518,12 @@ form,
   padding: 20px;
   border: none;
   background: var(--background);
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 42px;
 }
 
 .input-group {
   margin: 10px 0;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 42px;
 }
 
 .input-group label {
@@ -535,15 +539,6 @@ form,
   font-size: 16px;
   border-radius: 20px;
   border: 1px solid gray;
-}
-
-.btn {
-  padding: 10px;
-  font-size: 16px;
-  color: var(--text-alt);
-  background: var(--secondary);
-  border: none;
-  border-radius: 20px;
 }
 
 .error {

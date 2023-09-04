@@ -1,14 +1,13 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import ContactForm from "../components/ContactForm.svelte";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} />
 <!-- <LatestBlogPosts /> -->
-<section class="corner-round border">
-  <img class="div-banner" src="/banner.png" alt="Banner" />
-  <div>
+<Section>
+  <div id="index">
     <h2 class="section-heading">Empowering Possibilities with Technology</h2>
     <br />
     <article class="company-description">
@@ -49,4 +48,4 @@ import ContactForm from "../components/ContactForm.svelte";
     </article>
     <br />
   </div>
-</section>
+</Section>
