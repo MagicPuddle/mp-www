@@ -203,7 +203,7 @@ hr {
   border-radius: 7rem;
 }
 
-/* Logo */
+/* Logo and Site Name */
 .logo-img {
   position: fixed;
   width: 100%;
@@ -213,7 +213,6 @@ hr {
   right: 0px;
 }
 
-/* Header */
 .logo-h1 {
   position: fixed;
   font-family: var(--font-h1);
