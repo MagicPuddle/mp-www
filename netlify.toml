@@ -1,5 +1,5 @@
 [build]
-command = "npm run astro build"
+command = "npm run build"
 publish = "dist"
 
 [build.environment]
@@ -19,4 +19,4 @@ for = "/*"
 Access-Control-Allow-Origin = "*"
 
 [functions]
-external_node_modules = ["astro"]
+external_node_modules = [""]

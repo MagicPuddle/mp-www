@@ -24,7 +24,6 @@
 
 
   <form on:submit={handleSubmit} class="registration-form">
-    <h3>Registration Form</h3>
     <label for="username"></label>
     <input type="text" id="username" placeholder="User Name"
     bind:value={username} required />

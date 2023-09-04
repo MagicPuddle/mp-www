@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Section from "../components/Section.astro";
-import Login from "../components/Login.astro";
-import RegistraionForm from "../components/RegistraionForm.svelte";
+import Login from "../components/Login.svelte";
+import RegistrationForm from "../components/RegistrationForm.svelte";
 ---
 
 <BaseLayout />
@@ -11,12 +11,10 @@ import RegistraionForm from "../components/RegistraionForm.svelte";
   <div id="register">
     <h2>Create An Account</h2>
     <br />
-    <p>To gain access to all our services please create an account and login.</p>
-  <RegistraionForm />
-  </div>
-<br />
-<div id="login">
-  <Login />
-  <br />
+    <p>
+      To gain access to services, create an account or 
+      <a href="login">login</a>.
+    </p>
+    <RegistrationForm />
   </div>
 </Section>

@@ -1,0 +1,15 @@
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--text-alt);
+}
+
+a:active {
+    color: var(--secondary);
+}
+
+a:focus {
+    color: var(--primary);
+}

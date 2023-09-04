@@ -1,17 +1,13 @@
 ---
 // GodGas Theme
 
-// Import the global.css file here so that it is included on
-// all pages through the use of the <BaseHead /> component.
-
 // JavaScript
 import "../js/mp-nav.js";
-
+import "../js/fontawesome"
 // CSS
 import "../styles/global.css";
-import "../styles/colors.css";
-import "../styles/media-query.css";
 import "../styles/index.css";
+import "../styles/media-query.css";
 
 // Font
 import "@fontsource/fugaz-one";
@@ -53,11 +49,3 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
-
-<!-- Fonts -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css"
-  integrity="sha512-XgCw4Srl8lC1ECwcaHwAU0WnxQwHkqmInzg9wJLtGB7DRuMaXPuK2k9WJ2AwRDGdrgK9eJpZl2hUlLi2WQssmw=="
-  crossorigin="anonymous"
-/>
