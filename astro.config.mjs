@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import netlify from "@astrojs/netlify/functions";
+// import netlify from "@astrojs/netlify/functions";
 // import netlify from '@astrojs/netlify/edge-functions'; no compat with builders below
 import react from "@astrojs/react";
 import svelte from "@astrojs/svelte";
