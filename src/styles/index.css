@@ -1,7 +1,17 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap'); */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css');
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css'); */
+
+/* Fonts */
+:root {
+  /* TODO: Reconfigure fonts to dislpay better when fonts are not available */
+  --font-menu: 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'Segoe UI', Roboto, Ubuntu, Arial, sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
+  --font: 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif, BlinkMacSystemFont, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', -apple-system, system-ui;
+  --font-alt: 'Segoe UI', -apple-system, system-ui;
+  --font-h1: 'Fugaz One', -apple-system, system-ui, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'hack-subset';
+  --font-code: 'Terminus', 'hack-subset', 'monospace';
+}
 
 /* Color Definitions */
 :root {
@@ -9,8 +19,7 @@
   --background: #080113;
   --background-alt: #0b001c;
   --primary: #271874;
-  --primary-alt: #342771;
-  /* Keeping the same color */
+  --primary-alt: #271d6e;
 
   /* Secondary Colors */
   --secondary: #05f4c5;
@@ -28,18 +37,11 @@
   --code: #0088ff;
 }
 
-/* Fonts */
-:root {
-  --font-menu: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif, 'Font Awesome 6 Brands', 'Font Awesome 6 Free';
-  --font: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif, 'Font Awesome 6 Brands', 'Font Awesome 6 Free';
-  --font-alt: system-ui;
-  --font-h1: 'Fugaz One', 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'hack-subset';
-  --font-code: 'Terminus', 'hack-subset', 'monospace';
-}
 
-.color-background{
+.color-background {
   color: var(--background);
 }
+
 .color-primary {
   color: var(--primary);
 }
@@ -47,6 +49,7 @@
 .color-secondary {
   color: var(--secondary);
 }
+
 .color-compliment {
   color: var(--compliment);
 }
@@ -64,7 +67,7 @@ code {
 }
 
 pre code {
-  font-family: 'Terminus', 'Hack', monospace;
+  font-family: var(--font-code);
   padding: 2rem 2rem;
   white-space: pre;
 }
@@ -166,7 +169,7 @@ p {
   font-family: var(--font);
   text-align: center;
   line-height: 1.26rem;
-  text-shadow: 0.03rem 0.003rem 0.2rem var(--secondary);
+  text-shadow: 0px 0px 4px var(--compliment);
 }
 
 br {
@@ -303,7 +306,7 @@ hr {
   padding: 4px 8px;
   text-decoration: none;
   border-radius: 42px;
-  text-shadow: 0 0 0.6rem var(--primary);
+  text-shadow: 0 0 0.6rem var(--compliment);
 }
 
 .nav a:hover,
@@ -339,39 +342,28 @@ hr {
 /* Sections */
 section {
   margin-top: 115px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding-bottom: 1rem;
-  font-family: var(--font);
-  justify-items: center;
-  justify-content: space-between;
-  width: 100%;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  max-width: 100%;
-  min-width: none;
+  max-width: 90%;
+  min-width: fit-content;
   overflow: hidden;
-  scroll-padding-bottom: 0.9rem;
+  scroll-padding-bottom: 10px;
   z-index: auto;
 }
 
 section p {
-  text-align: center;
-  max-width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
+width: 80%;
 }
 
 section h1 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: fit-content;
+  width: 90%;
 }
 
 section img {
-  height: 20px;
+  height: 120px;
   width: fit-content;
 }
+
 .section-menu {
   text-align: center;
   text-justify: center;
@@ -388,19 +380,16 @@ footer {
   border-top-left-radius: 3.14rem;
   border-bottom: 0;
   box-shadow: 0 0 0.9rem 0.096rem var(--primary);
-  height: fit-content;
-  width: 100.17%;
+  width: 100%;
   font-size: 9px;
-  left: 0;
-  right: 0;
+  left: 1px;
+  right: 1px;
   bottom: 0;
   position: fixed;
 }
 
 .credits {
-  text-shadow: 0.2rem 0.2rem 1rem var(--primary-alt);
-  padding-left: 12px;
-  padding-right: 12px;
+  text-shadow: 0.2rem 0.2rem 1rem var(--compliment);
   font-size: 9px;
 }
 
@@ -410,7 +399,7 @@ time {
 
 /* Code Blocks */
 code {
-  padding: 2px 5px;
+  width: fit-content;
   background-color: var(--primary);
 }
 
@@ -429,6 +418,7 @@ blockquote {
   padding: 2px 0px 2px 20px;
   margin: 0px;
   font-style: italic;
+  width: fit-content;
 }
 
 /* Tables */
@@ -461,8 +451,6 @@ img {
   align-items: center;
   gap: 1rem;
   font-size: 1rem;
-  color: var(--text-primary);
-  /* Use primary text color */
 }
 
 .contact-form,
@@ -508,7 +496,6 @@ img {
 .registration-form button:hover {
   background-color: var(--secondary-alt);
   color: var(--text-alt);
-  /* Use secondary alternate color */
 }
 
 /* Media Queries */
@@ -545,9 +532,8 @@ form,
   height: 30px;
   width: 100%;
   padding: 5px 10px;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 20px;
-  border: 1px solid gray;
 }
 
 .error {
@@ -562,7 +548,7 @@ form,
 }
 
 .success {
-  color: #3c763d;
+  color: #317632;
   background: #dff0d8;
   border: 1px solid #3c763d;
   margin-bottom: 20px;
