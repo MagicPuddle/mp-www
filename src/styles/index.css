@@ -5,7 +5,7 @@
 
 /* Fonts */
 :root {
-  /* TODO: Reconfigure fonts to dislpay better when fonts are not available */
+  /* TODO: Reconfigure fonts to display better when fonts are not available */
   --font-menu: 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'Segoe UI', Roboto, Ubuntu, Arial, sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
   --font: 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif, BlinkMacSystemFont, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', -apple-system, system-ui;
   --font-alt: 'Segoe UI', -apple-system, system-ui;
@@ -97,7 +97,6 @@ body {
   margin: auto;
   padding: 1rem;
   max-width: 65ch;
-  text-align: center;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -348,6 +347,7 @@ section {
   min-width: fit-content;
   overflow: hidden;
   scroll-padding-bottom: 10px;
+  text-align: center;
   z-index: auto;
 }
 
@@ -361,16 +361,8 @@ section h1 {
 
 section img {
   height: 120px;
-  width: fit-content;
+  width: 100%;
 }
-
-.section-menu {
-  text-align: center;
-  text-justify: center;
-  justify-content: center;
-  z-index: auto;
-}
-
 
 /* Footer */
 footer {
@@ -472,7 +464,6 @@ img {
   border-radius: 42px;
   padding: 0.6rem;
   font-size: 1rem;
-  width: 100%;
   margin-bottom: 0.6rem;
 }
 
@@ -562,5 +553,5 @@ form,
   color: var(--secondary);
   border: 1px var(--primary) inset;
   border-radius: 42px;
-  padding: 10px;
+  padding: 1px;
 }
