@@ -1,9 +1,9 @@
 [build]
-command = "npm run build"
+command = "astro build"
 publish = "dist"
 
 [build.environment]
-NODE_VERSION = "20"
+NODE_VERSION = ">=20"
 
 [[dev]]
 command = "astro dev"
@@ -19,4 +19,4 @@ for = "/*"
 Access-Control-Allow-Origin = "*"
 
 [functions]
-external_node_modules = [""]
+external_node_modules = ["nodemailer"]

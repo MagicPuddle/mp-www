@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "astro",
+        "astrojs",
         "fontawesome",
         "fugaz",
         "onclick"
@@ -9,8 +10,17 @@
         {
             "title": "blog",
             "path": "[[workspace]]/src/content/blog"
+        },
+        {
+            "title": "news",
+            "path": "[[workspace]]/src/content/news"
+        },
+        {
+            "title": "docs",
+            "path": "[[workspace]]/src/content/docs"
         }
     ],
     "[markdown]": {
-    }
+    },
+    "easynpm.defaultProjectRoot": "/Users/redz/MagicPuddle/www"
 }

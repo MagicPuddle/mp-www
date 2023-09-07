@@ -5,11 +5,12 @@ import netlify from "@astrojs/netlify/functions";
 // import netlify from '@astrojs/netlify/edge-functions'; no compat with builders below
 import react from "@astrojs/react";
 import svelte from "@astrojs/svelte";
+import { netlifyFunctions } from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://magicpuddle.netlify.app',
-  integrations: [mdx(), sitemap(), react(), svelte()],
+  integrations: [mdx(), sitemap(), react(), svelte(), netlify(), netlifyFunctions(), nodemailer()],
   output: 'server',
   publish: 'dist',
   adapter: netlify({
