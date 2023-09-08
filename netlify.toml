@@ -19,4 +19,4 @@ for = "/*"
 Access-Control-Allow-Origin = "*"
 
 [functions]
-external_node_modules = ["nodemailer"]
+external_node_modules = []
