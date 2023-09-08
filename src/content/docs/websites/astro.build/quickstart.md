@@ -8,7 +8,7 @@ slug: docs
 
 # Astro
 
-![fa-crown](fa-crown.svg)
+
 
 A static site builder that allows you to create fast and efficient websites using a component-based approach. Here's a step-by-step guide to building a website with Astro:
 
