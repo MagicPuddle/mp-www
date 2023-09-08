@@ -4,7 +4,6 @@ import sitemap from '@astrojs/sitemap';
 import robotsTxt from "astro-robots-txt";
 import netlify from "@astrojs/netlify/functions";
 // import netlify from '@astrojs/netlify/edge-functions'; no compat with builders below
-
 import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
