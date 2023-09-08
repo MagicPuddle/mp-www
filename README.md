@@ -2,7 +2,7 @@
   <img src="https://github.com/MagicPuddle/media/blob/875e5e99f1e108c12e5da44c4e8a571af9ca7776/banner.png" alt="MagicPuddle Banner">
 </p>
 
-# :sparkles: [MagicPuddle](https://magicpuddle.netlify.app/) - *Tech Solutions*
+# :sparkles: [MagicPuddle](https://magicpuddle.netlify.app/) - *Website*
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/44707b37-16ac-4137-b85b-f4c469a97b77/deploy-status)](https://app.netlify.com/sites/magicpuddle/deploys)
 
