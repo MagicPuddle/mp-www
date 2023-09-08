@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { SITE_TITLE } from '../consts';
 import { image } from 'astro:content';
 

@@ -1,48 +1,97 @@
-<script>
-  let username = "";
-  let email = "";
-  let password = "";
-  let confirmPassword = "";
+---
+import { post } from "@astro/types";
+import { onMount } from "svelte";
 
-  function handleSubmit() {
-    if (password !== confirmPassword) {
-      alert("Passwords do not match");
+let isVerified = false;
+
+export const form: post = {
+  async register(event: Event) {
+    event.preventDefault();
+
+    if (!isVerified) {
+      // Show an error message or prevent submission if not verified by reCAPTCHA.
+      console.error("Please complete the reCAPTCHA.");
       return;
     }
 
-    // Perform registration logic here, e.g., send data to your server
-    const userData = { username, email, password };
-    console.log("User Data:", userData);
+    const formData = new FormData(event.currentTarget as HTMLFormElement);
+    const response = await fetch("/.netlify/functions/register", {
+      method: "POST",
+      body: JSON.stringify({
+        firstName: formData.get("firstName"),
+        lastName: formData.get("lastName"),
+        username: formData.get("username"),
+        email: formData.get("email"),
+        phoneNumber: formData.get("phone"),
+        password: formData.get("password"),
+      }),
+    });
 
-    // Clear form fields after submission
-    username = "";
-    email = "";
-    password = "";
-    confirmPassword = "";
+    if (response.ok) {
+      // Handle successful registration, e.g., show a success message.
+    } else {
+      // Handle registration error, e.g., show an error message.
+    }
+  },
+};
+
+onMount(() => {
+  // Initialize reCAPTCHA when the component mounts.
+  const script = document.createElement("script");
+  script.src = "https://www.google.com/recaptcha/api.js";
+  script.async = true;
+  script.defer = true;
+  document.body.appendChild(script);
+
+  script.onload = () => {
+    // Initialize reCAPTCHA with your site key.
+    window.grecaptcha.init({
+      sitekey: "YOUR_RECAPTCHA_SITE_KEY", // Replace with your reCAPTCHA site key.
+      callback: () => {
+        isVerified = true;
+      },
+    });
+  };
+});
+---
+
+<form on:submit={form.register} class="registration-form">
+  <div class="name-section">
+    <div class="name-input">
+      <label for="firstName"></label>
+      <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+    </div>
+    <div class="name-input">
+      <label for="lastName"></label>
+      <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+    </div>
+  </div>
+
+  <label for="username"></label>
+  <input type="text" id="username" name="username" placeholder="User Name" required />
+
+  <label for="email"></label>
+  <input type="email" id="email" name="email" placeholder="Email" required />
+
+  <label for="phone"></label>
+  <input type="tel" id="phone" name="phone" placeholder="Phone" required />
+
+  <label for="password"></label>
+  <input type="password" id="password" name="password" placeholder="Password" required />
+
+  <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+
+  <button type="submit">Register</button>
+</form>
+
+<style>
+  .name-section {
+    display: flex;
+    justify-content: space-between;
   }
-</script>
 
-
-  <form on:submit={handleSubmit} class="registration-form">
-    <label for="username"></label>
-    <input type="text" id="username" placeholder="User Name"
-    bind:value={username} required />
-
-    <label for="email"></label>
-    <input type="email" id="email" placeholder="Email"
-    bind:value={email} required />
-
-    <label for="password"></label>
-    <input type="password" id="password" placeholder="Password"
-    bind:value={password} required />
-
-    <label for="confirm_password"></label>
-    <input
-      type="password"
-      id="confirm_password"
-      placeholder="Confirm Password"
-      bind:value={confirmPassword}
-      required
-    />
-    <button type="submit">Submit</button>
-  </form>
+  .name-input {
+    flex: 1;
+    margin-right: 10px;
+  }
+</style>
