@@ -9,4 +9,4 @@ keywords: []
 
 ## MagicPuddle News
 
-MagicPuddle Updates will be displayed here
+Hello

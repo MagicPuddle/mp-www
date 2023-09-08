@@ -1,38 +1,35 @@
-<form class="contact-form" on:submit={handleSubmit}>
-  <h2>Contact Form</h2>
-  <input type="text" name="name" placeholder="Name" required />
-  <input type="email" name="email" placeholder="Email" required />
-  <textarea name="message" placeholder="Message" required />
-  <button type="submit">Submit</button>
-</form>
-<p>{formStatus}</p>
+---
+import { post } from "@astro/types";
 
-<script>
-  let formStatus = "";
-
-  async function handleSubmit(event) {
+export const form: post = {
+  async contactForm(event: Event) {
     event.preventDefault();
 
-    const formData = new FormData(event.target);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      message: formData.get("message"),
-    };
+    const formData = new FormData(event.currentTarget as HTMLFormElement);
+    const response = await fetch("/.netlify/functions/contact", {
+      method: "POST",
+      body: formData,
+    });
 
-    try {
-      const response = await fetch("/.netlify/functions/submitForm", {
-        method: "POST",
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        formStatus = "Thank you for your message!";
-      } else {
-        formStatus = "Error submitting form";
-      }
-    } catch (error) {
-      formStatus = "Error submitting form";
+    if (response.ok) {
+      // Handle successful form submission, e.g., show a success message.
+    } else {
+      // Handle form submission error, e.g., show an error message.
     }
-  }
-</script>
+  },
+};
+---
+
+<form class="contact-form" on:submit={form.contactForm}>
+  <label for="name"></label>
+  <input type="text" id="name" name="name" placeholder="Name" required />
+
+  <label for="email"></label>
+  <input type="email" id="email" name="email" placeholder="Email" required />
+
+  <label for="message"></label>
+  <textarea id="message" name="message" placeholder="Message" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+

@@ -229,18 +229,35 @@ hr {
   right: 0px;
 }
 
-.logo-h1 {
+.page-title {
   position: fixed;
+  width: fit-content;
   font-family: var(--font-h1);
   font-weight: 400;
   text-align: center;
   color: var(--text);
-  text-shadow: 0.4rem 0.4rem 1rem var(--primary-alt);
   font-size: 2rem;
   left: 0px;
   right: -0px;
   top: 40px;
   z-index: 980;
+}
+
+.page-title a {
+  color: var(--text);
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 4px 8px;
+  text-decoration: none;
+  border-radius: 42px;
+  text-shadow: 0 0 0.6rem var(--compliment);
+}
+
+.page-title a:hover {
+  color: var(--text-alt);
+  box-shadow: 0 0 0.6rem var(--primary);
+  text-shadow: 0 0 0.6rem var(--secondary);
 }
 
 /* Navigation */
@@ -279,12 +296,7 @@ hr {
   box-shadow: 0 0 0.096rem 0.096rem var(--primary);
 }
 
-.nav .active:hover {
-  border: 1px solid var(--secondary);
-  background-color: var(--primary);
-  color: var(--text-alt);
-  box-shadow: 0 0 0.096rem var(--primary);
-}
+
 
 .nav .active:active {
   background-color: var(--primary-alt);
@@ -352,7 +364,7 @@ section {
 }
 
 section p {
-width: 80%;
+  width: 80%;
 }
 
 section h1 {

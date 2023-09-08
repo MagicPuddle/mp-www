@@ -6,12 +6,31 @@ const today = new Date();
   <div class="credits">
     <p>
       <span class="color-secondary">&copy;</span>
-      <span class="color-secondary">{today.getFullYear()}</span> 
-      MagicPuddle all rights reserved
+      <span class="color-secondary">{today.getFullYear()}</span>
+       MagicPuddle all rights reserved
       <span class="color-secondary">|</span> Powered by
       <a href="https://www.github.com/MagicPuddle/godgas">GodGas</a>
     </p>
   </div>
 </footer>
+<style>
+  footer {
 
-<style></style>
+    background: linear-gradient(var(--background)) no-repeat;
+    color: rgb(var(--gray));
+    text-align: center;
+  }
+  .social-links {
+    display: inline-flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .social-links a {
+    text-decoration: none;
+    color: rgb(var(--gray));
+  }
+  .social-links a:hover {
+    color: rgb(var(--gray-dark));
+  }
+</style>

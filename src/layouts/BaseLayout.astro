@@ -3,6 +3,8 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import SocialLinks from "../components/SocialLinks.astro";
+import { LOGO, SITE_TITLE } from "../consts";
 
 const { title, description, image = "/favicon.svg" } = Astro.props;
 ---
@@ -11,9 +13,7 @@ const { title, description, image = "/favicon.svg" } = Astro.props;
   <head>
     <BaseHead title={title} description={description} />
   </head>
-  <body>
     <Header />
-    <slot />
     <Footer />
   </body>
 </html>

@@ -1,9 +1,12 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import Logo from "./Logo.astro";
+import { LOGO, SITE_TITLE } from "../consts";
 ---
 
 <header class="header">
+  <Logo />
+  <h1 class="page-title"><a href="/">{SITE_TITLE}</a></h1>
   <nav class="nav" id="nav-menu">
     <HeaderLink href="/"><i class="fa fa-igloo"></i></HeaderLink>
     <!--<HeaderLink href="/news"><i class="fa-regular fa-newspaper"></i></HeaderLink>-->
@@ -13,6 +16,7 @@ import Logo from "./Logo.astro";
     <HeaderLink href="/about">
       <i class="fa-regular fa-address-card"></i>
     </HeaderLink>
+    <!--<HeaderLink href="https://github.com/MagicPuddle" target="_blank"><i class="fa-regular fa-github"></i></HeaderLink>-->
     <HeaderLink href="/contact">
       <i class="fa-regular fa-comments"></i>
     </HeaderLink>
