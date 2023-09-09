@@ -4,7 +4,11 @@
 
 # :sparkles: [MagicPuddle](https://magicpuddle.netlify.app/) - *Website*
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/44707b37-16ac-4137-b85b-f4c469a97b77/deploy-status)](https://app.netlify.com/sites/magicpuddle/deploys)
+[![Version](https://img.shields.io/badge/version-0.0.2-indigo.svg)](https://semver.org/)
+[![GitHub stars](https://img.shields.io/github/stars/MagicPuddle/www.svg)](https://github.com/UMagicPuddle/www/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/MagicPuddle/www.svg)](https://github.com/MagicPuddle/www/network)
+<!--[![Downloads](https://img.shields.io/github/downloads/MagicPuddle/www/total.svg)](https://github.com/MagicPuddle/www/releases)-->
+[![Deploy Status](https://api.netlify.com/api/v1/badges/44707b37-16ac-4137-b85b-f4c469a97b77/deploy-status)](https://app.netlify.com/sites/magicpuddle/deploys)
 
 Welcome to the GitHub repository for **MagicPuddle** website. Our company website is designed to be a hub of information about our offerings, expertise, and commitment to innovation. 
 
@@ -13,13 +17,12 @@ Welcome to the GitHub repository for **MagicPuddle** website. Our company websit
 Visit the [MagicPuddle website](https://magicpuddle.netlify.app/) to:
 
 - Learn about our **comprehensive technology services**, including computer sales, maintenance, repair, software solutions, and expert consultations.
-- Get insights into how our **MagicPuddle Operating System (MPOS)** enhances your hardware experience.
-- Meet our team of **experienced technicians and software developers** dedicated to serving your needs.
-- Stay updated with the latest tech trends and news through our **blog**.
-- Connect with us on social media for tech insights and updates: [Twitter](https://twitter.com/MagicPuddleTech), [LinkedIn](https://www.linkedin.com/company/magicpuddletech), [Instagram](https://www.instagram.com/magicpuddletech).
+- Get access to tutorials and documentation
+- MagicPuddle Operating System [(MPOS)](https://magicpuddle.netlify.app/mpos) enhances your hardware experience.
+- Stay updated with the latest MagicPuddle [news](https://magicpuddle.netlify.app/news).
 
 ## :email: Contact Us
 
-For inquiries, partnerships, or feedback, feel free to reach out to us at <contact@magicpuddle.net>.
+For inquiries, partnerships, or feedback, feel free to contact us [here](https://magicpuddle.netlify.app/contact).
 
-We're excited to have you explore the MagicPuddle universe through our website! :computer::rocket:
+We're excited to have you explore the MagicPuddle multiverse through our website! :computer::rocket:
