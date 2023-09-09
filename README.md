@@ -7,8 +7,9 @@
 [![Version](https://img.shields.io/badge/version-0.0.2-indigo.svg)](https://semver.org/)
 [![GitHub stars](https://img.shields.io/github/stars/MagicPuddle/www.svg)](https://github.com/UMagicPuddle/www/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/MagicPuddle/www.svg)](https://github.com/MagicPuddle/www/network)
-<!--[![Downloads](https://img.shields.io/github/downloads/MagicPuddle/www/total.svg)](https://github.com/MagicPuddle/www/releases)-->
 [![Deploy Status](https://api.netlify.com/api/v1/badges/44707b37-16ac-4137-b85b-f4c469a97b77/deploy-status)](https://app.netlify.com/sites/magicpuddle/deploys)
+<!--[![Downloads](https://img.shields.io/github/downloads/MagicPuddle/www/total.svg)](https://github.com/MagicPuddle/www/releases)-->
+
 
 Welcome to the GitHub repository for **MagicPuddle** website. Our company website is designed to be a hub of information about our offerings, expertise, and commitment to innovation. 
 
