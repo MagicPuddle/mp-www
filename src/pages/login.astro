@@ -3,6 +3,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Login from "../components/Login.astro";
 import Section from "../components/Section.astro";
+import CMS from "astro-netlify-components/CMS.astro";
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} />
@@ -11,5 +12,6 @@ import Section from "../components/Section.astro";
 <br />
 <p>Please login to your account for our products, services and work request information.</p>
 <Login />
+<CMS />
 </Section>
 

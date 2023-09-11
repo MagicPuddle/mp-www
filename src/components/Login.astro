@@ -1,5 +1,6 @@
 ---
 import { post } from "@astro/types";
+import CMS from "astro-netlify-components/CMS.astro";
 
 export const form: post = {
   async login(event: Event) {
@@ -43,4 +44,7 @@ export const form: post = {
 </form>
   <p>Create an account? <a href="register">Sign Up</a></p>
   <p>Forgot password? <a href="reset-passwd">Reset It</a></p>
+</div>
+<div class="cms">
+  <CMS />
 </div>
