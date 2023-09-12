@@ -1,7 +1,7 @@
 {
   "name": "www",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,19 +10,21 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.2.0",
     "@astrojs/mdx": "^1.0.3",
     "@astrojs/netlify": "^3.0.1",
     "@astrojs/prism": "^3.0.0",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.0",
     "@astrojs/svelte": "^4.0.2",
-    "@fontsource/fugaz-one": "^5.0.11",
+    "@fontsource/fugaz-one": "^5.0.12",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "astro": "^3.0.12",
     "astro-netlify-components": "^0.2.1",
     "astro-robots-txt": "^1.0.0",
-    "nodemailer": "^6.9.5"
+    "nodemailer": "^6.9.5",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "accessible-astro-components": "^2.2.0"
