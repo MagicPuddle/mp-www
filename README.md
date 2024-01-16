@@ -26,4 +26,4 @@ Visit the [MagicPuddle website](https://magicpuddle.netlify.app/) to:
 
 For inquiries, partnerships, or feedback, feel free to contact us [here](https://magicpuddle.netlify.app/contact).
 
-We're excited to have you explore the MagicPuddle multiverse through our website! :computer::rocket:
+Jump in, and explore the MagicPuddle multiverse! :computer::rocket:
