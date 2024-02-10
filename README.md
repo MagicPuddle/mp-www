@@ -23,7 +23,5 @@ Visit the [MagicPuddle](https://magicpuddle.netlify.app/) to:
 ## :email: Contact Us
 
 For inquiries, partnerships, or feedback, feel free to contact us [here](https://magicpuddle.netlify.app/contact).
-
-Explore the MagicPuddle. :computer::rocket:
-
+
 Jump in, and explore the MagicPuddle multiverse! :computer::rocket:
